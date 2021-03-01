@@ -1,922 +1,258 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title> [ Soymilk ]</title>
   
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/lib/highlight/monokai-sublime.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
 
-  
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<link rel="stylesheet" href="/css/milk.css">
+
 <meta name="generator" content="Hexo 5.4.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <div class="milk-header">
+     
+
+  <nav class="header-nav">
+     
+    <ul class="nav-menu">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <li id="Home">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <a href="/ ">Home</a>
+        </li>
+      
+        <li id="Archives">
+          <i class="fa fa-archive" aria-hidden="true"></i>
+          <a href="/archives ">Archives</a>
+        </li>
+      
+        <li id="About">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <a href="/about ">About</a>
+        </li>
+      
+    </ul>
+    
+    
+      <span class="nav-date">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <span id="date"></span>
+      </span>
+    
+    
+    
+      <span class="nav-system" id="nav-system"></span>
+    
+    
+    <span class="nav-access">
+      <i class="fa fa-universal-access" id="nav-access"></i>
+      <i class="fa fa-angle-down"></i>
+      <div class="dropdown-content" id="dropdown-content">
+        <ul class="social">
+          
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/MRsoymilk">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a href="mailto:codermrsoymilk@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        </ul>
+        <ul>
+          <li><span>Power by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span></li>
+        </ul>
       </div>
-    </div>
+    </span>
+  </nav>
+ 
   </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
+  <div class="milk-body">
+    
+<div class="desktop-content">
+   
+<ul>
   
-    <article id="post-Python爬虫" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/01/Python%E7%88%AC%E8%99%AB/" class="article-date">
-  <time class="dt-published" datetime="2021-03-01T12:30:31.056Z" itemprop="datePublished">2021-03-01</time>
-</a>
+     
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>title: Python爬虫</p>
-<p>[TOC]</p>
-<h1 id="1-基本库的使用-推荐一种方式下载第三方库速度比较快-pip-install-包的名字-i-https-pypi-tuna-tsinghua-edu-cn-simple"><a href="#1-基本库的使用-推荐一种方式下载第三方库速度比较快-pip-install-包的名字-i-https-pypi-tuna-tsinghua-edu-cn-simple" class="headerlink" title="1:基本库的使用(推荐一种方式下载第三方库速度比较快: pip install 包的名字 -i https://pypi.tuna.tsinghua.edu.cn/simple)"></a>1:基本库的使用(推荐一种方式下载第三方库速度比较快: pip install 包的名字 -i <a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a>)</h1><h2 id="1-urllib的使用"><a href="#1-urllib的使用" class="headerlink" title="1:urllib的使用"></a>1:urllib的使用</h2><ul>
-<li><p>urllib的下载: urllib是内置库所以不用下载</p>
-</li>
-<li><p>初学者建议先看urllib<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/urllib.html">官方文档</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request"><code>urllib.request</code></a> for opening and reading URLs</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/urllib.error.html#module-urllib.error"><code>urllib.error</code></a> containing the exceptions raised by <a target="_blank" rel="noopener" href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request"><code>urllib.request</code></a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/urllib.parse.html#module-urllib.parse"><code>urllib.parse</code></a> for parsing URLs</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/urllib.robotparser.html#module-urllib.robotparser"><code>urllib.robotparser</code></a> for parsing <code>robots.txt</code> files</p>
-</li>
-<li><p>主要含有四个模块</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.kancloud.cn/cnhuzi/python/urllib.request.xhtml#module-urllib.request"><code>urllib.request</code></a> 打开和阅读 URLs</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.kancloud.cn/cnhuzi/python/urllib.error.xhtml#module-urllib.error"><code>urllib.error</code></a> 包含 <a target="_blank" rel="noopener" href="https://www.kancloud.cn/cnhuzi/python/urllib.request.xhtml#module-urllib.request"><code>urllib.request</code></a> 抛出的异常,捕获异常</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.kancloud.cn/cnhuzi/python/urllib.parse.xhtml#module-urllib.parse"><code>urllib.parse</code></a> 用于处理 URL(拆分,解析,合并等)</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.kancloud.cn/cnhuzi/python/urllib.robotparser.xhtml#module-urllib.robotparser"><code>urllib.robotparser</code></a> 用于解析 <code>robots.txt</code> 文件</p>
-</li>
-<li><p>request模块的使用</p>
-</li>
-<li><pre><code class="python">import urllib.request
-response = urllib.request.urlopen(&#39;http://www.baidu.com&#39;)    # 获取url里面的信息生成一个http response类
-content = response.read().decode(&#39;utf-8&#39;)  # 通过里面的方法读取html文件
-print(response.status)   # 输出状态码
-print(response.getheaders())    # 获取响应头的内容(列表形式)
-print(content)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- urllib.request.urlopen(*url*, *data&#x3D;None*, [*timeout*, ]***, *cafile&#x3D;None*, *capath&#x3D;None*, *cadefault&#x3D;False*, *context&#x3D;None*)</span><br><span class="line"></span><br><span class="line">- 里面的data一般是针对post请求用的,timeout是设置超时时间多少的参数</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import urllib.request</span><br><span class="line">  import urllib.parse</span><br><span class="line">  data &#x3D; bytes(urllib.parse.urlencode(&#123;&#39;word&#39;: &#39;hello&#39;&#125;), encoding&#x3D;&#39;utf-8&#39;)   # 把参数转换为字节流编码格式的内容</span><br><span class="line">  response &#x3D; urllib.request.urlopen(&#39;http:&#x2F;&#x2F;httpbin.org&#x2F;post&#39;, data&#x3D;data)  # 针对post请求</span><br><span class="line">  print(response.read())   # 输出请求的一些内容</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>至于请求头的内容添加在request模块用会更加简单,在urllib就不讲了</p>
-</li>
-</ul>
-<h2 id="2-requests的使用-强烈推荐这个"><a href="#2-requests的使用-强烈推荐这个" class="headerlink" title="2:requests的使用(强烈推荐这个)"></a>2:requests的使用(强烈推荐这个)</h2><ul>
-<li><p>requests属于第三方库因此需要pip命令下载(pip install requests -i <a target="_blank" rel="noopener" href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a>)</p>
-</li>
-<li><pre><code class="python">import requests
-# 相比于urllib这个会更加简单
-response = requests.get(&#39;http://httpbin.org/get&#39;)   # 针对get请求
-print(response.json())     # 获取html文件(请求信息)
-print(response.cookies)  # 获取cookies信息
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 爬取图片</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import requests</span><br><span class="line">  response &#x3D; requests.get(&#39;https:&#x2F;&#x2F;github.com&#x2F;favicon.ico&#39;)</span><br><span class="line">  with open(&#39;favicon.ico&#39;, &#39;wb&#39;) as f:    # 用来爬取图片</span><br><span class="line">      f.write(response.content)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>添加请求头</p>
-</li>
-<li><pre><code class="python">import requests
-headers = &#123;
-    &#39;user-agent&#39;: &#39;Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Mobile Safari/537.36&#39;
-&#125;
-r = requests.get(&quot;https://www.zhihu.com/explore&quot;, headers=headers)
-print(r.text)      # 添加请求头
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 针对post请求</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import requests</span><br><span class="line">  </span><br><span class="line">  data &#x3D; &#123;&#39;name&#39;: &#39;germey&#39;,&#39;age&#39;: &#39;22&#39;&#125;</span><br><span class="line">  </span><br><span class="line">  r &#x3D; requests.post(&#39;http:&#x2F;&#x2F;httpbin.org&#x2F;post&#39;, data&#x3D;data)    # 针对post请求</span><br><span class="line">  </span><br><span class="line">  print(r.text)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>模仿文件上传</p>
-</li>
-<li><pre><code class="python">import requests
-files = &#123;&#39;file&#39;: open(&#39;favicon.ico&#39;, &#39;rb&#39;)&#125;
-r = requests.post(&quot;https://httpbin.org/post&quot;, files=files)   # 上传文件
-print(r.text)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- cookies的使用</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import requests</span><br><span class="line">  response &#x3D; requests.get(&quot;https:&#x2F;&#x2F;www.baidu.com&quot;)</span><br><span class="line">  print(response.cookies)</span><br><span class="line">  for key,value in response.cookies.items():</span><br><span class="line">      print(key + &#39;&#x3D;&#39; +value)</span><br><span class="line">  </span><br><span class="line">  headers &#x3D; &#123;</span><br><span class="line">      &#39;cookie&#39; : &#39;_zap&#x3D;71067a6e-93a3-4178-9073-fab8c048ae1d; d_c0&#x3D;&quot;AFAX5_aZnBKPTkW58STj2Vj_y_ExNXImfuk&#x3D;|1612526988&quot;; _xsrf&#x3D;49e336af-0443-4a27-beea-7db717218bb8; Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49&#x3D;1612526991,1612590636; l_n_c&#x3D;1; q_c1&#x3D;a84aa7f913504dccb0d96cd4679b77e9|1612590656000|1612590656000; r_cap_id&#x3D;&quot;NTJlN2YxMDU4YjI0NDVkYzlhZjU2ZGNkMDcxMmU0MDc&#x3D;|1612590656|d01ec22bc813fa39ae8be46d2aebae41f1ccda39&quot;; cap_id&#x3D;&quot;NWJiZTVmNGNlZDU5NDE2YThiZTkxZjIyNTQxY2ZmNmM&#x3D;|1612590656|164768edd3907112d9a95a6e4bfe12f4af260c47&quot;; l_cap_id&#x3D;&quot;MTIwNWU3NDViMTc5NDc2OWE2NjgzY2ZkM2YxNDVmN2U&#x3D;|1612590656|7212c93e394110f3990a620e4ffdb334a01bae9b&quot;; n_c&#x3D;1; __utma&#x3D;51854390.55681038.1612590661.1612590661.1612590661.1; __utmb&#x3D;51854390.0.10.1612590661; __utmc&#x3D;51854390; __utmz&#x3D;51854390.1612590661.1.1.utmcsr&#x3D;(direct)|utmccn&#x3D;(direct)|utmcmd&#x3D;(none); __utmv&#x3D;51854390.010--|3&#x3D;entry_date&#x3D;20210206&#x3D;1; captcha_session_v2&#x3D;&quot;2|1:0|10:1612591752|18:captcha_session_v2|28:YzBmMzUyNnYzanZqa3VyOGJtdDA&#x3D;|80e7b1cdb9dc58f3defa47e48196cd4bd3e03949da3a5c00e3a93c0ad43ce5f9&quot;; SESSIONID&#x3D;pl4nI3Ll68iC5TNxEGuUlffad5FkFcmF9pRpj9ILObj; JOID&#x3D;WlETBkKlGMTVCrLydahInAf8Jm5p1Hvzt0KAsRqSIaKVM-e9AiIm1bgKvP56CC-TRkWJa1AMj-woj877fBHjIbA&#x3D;; osd&#x3D;UFwUCk-vFcPZB7j_cqRFlgr7KmNj2Xz_ukiNthafK6-SP-q3DyUq2LIHu_J3AiKUSkiDZlcAguYliML2dhzkLb0&#x3D;; captcha_ticket_v2&#x3D;&quot;2|1:0|10:1612591772|17:captcha_ticket_v2|312:eyJhcHBpZCI6IjIwMTIwMzEzMTQiLCJyZXQiOjAsInRpY2tldCI6InQwM19yVVNXVzhkSEtCbFhNRWh2M3haakRoY3ZxU2dnbEpLSXIyaURvV1ZpcGRPZHpIZzZCMm1hWVVPbVltbU9KczM0bDVQeWtHMGRNYmdrYjdNdWdNZnNrNG05aXdYRkxvMU90V2lBSmRGbzlrbXd1aTFrcks3UXdoWkJ4LWRvVWdrcXJJdjV6TmMxRVpLeDJ1UFdQMmZaQTFPMVdkSElONDFET2VnNC1zaHNCZyoiLCJyYW5kc3RyIjoiQGZERiJ9|657d24e736a0830d0cbb43d5f2b1d9e13a633aeb796be2a5de847745e8c6877c&quot;; z_c0&#x3D;&quot;2|1:0|10:1612591791|4:z_c0|92:Mi4xcW42RUZBQUFBQUFBVUJmbjlwbWNFaVlBQUFCZ0FsVk5yNEFMWVFBbURHLXAza1BoVnhDNjc5RGQ0cVJtczFwbUZB|3b76eca2eb71cf11666ca6417e3c8337f3eab0690d3987b1b5ca6f856c3674df&quot;; unlock_ticket&#x3D;&quot;AACh4siyaBAmAAAAYAJVTbc5HmAHYW9Z_OPVO0ao0yTN2mjpprabzQ&#x3D;&#x3D;&quot;; tst&#x3D;r; Hm_lpvt_98beee57fd2ef70ccdd5ca52b9740c49&#x3D;1612591795; KLBRSID&#x3D;031b5396d5ab406499e2ac6fe1bb1a43|1612591794|1612590632&#39;,</span><br><span class="line">      &#39;user-agent&#39; : &#39;Mozilla&#x2F;5.0 (Linux; Android 6.0; Nexus 5 Build&#x2F;MRA58N) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;88.0.4324.104 Mobile Safari&#x2F;537.36&#39;,</span><br><span class="line">      &#39;host&#39; : &#39;www.zhihu.com&#39;</span><br><span class="line">  &#125;  # 需先自己先登录获取cookies</span><br><span class="line">  r &#x3D; requests.get(&quot;https:&#x2F;&#x2F;www.zhihu.com&quot;, headers&#x3D;headers)   # 模拟登录</span><br><span class="line">  print(r.text)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>会话维持:如果第一个请求是用post()方法登录某个网站,第二次想获取成功登录后的自己个人的信息,你又用一次get()方法去请求个人信息页面,实际上相当于打开了俩次浏览器,是俩个完全不相关的会话,这个是不能获取到个人信息的.(可以通过设置相同的cookies来获取,但比较烦琐)</p>
-</li>
-<li><p>举个例子(<a target="_blank" rel="noopener" href="http://httpbin.org/">http://httpbin.org</a>)</p>
-</li>
-<li><pre><code class="python">import requests
-responese = requests.get(&quot;http://httpbin.org/cookies/set/number/123456789&quot;)  # 先用get方法登录了网站(cookies中名称是number 内容是123456789)
-responese1 = requests.get(&quot;http://httpbin.org/cookies&quot;)   # 来获取个人信息的cookies
-print(responese1.text)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 为了解决这个问题我们引用了Session对象</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  s &#x3D; requests.Session()   # 创建一个session对象</span><br><span class="line">  s.get(&quot;http:&#x2F;&#x2F;httpbin.org&#x2F;cookies&#x2F;set&#x2F;number&#x2F;123456789&quot;)    # 先登录网站</span><br><span class="line">  r &#x3D; s.get(&quot;http:&#x2F;&#x2F;httpbin.org&#x2F;cookies&quot;)   # 获取信息</span><br><span class="line">  print(r.text)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>SLL证书验证(当我们发送http请求,服务器会检查sll证书,可以通过verify参数控制是否检查此证书,默认是Ture,是检查)</p>
-</li>
-<li><pre><code class="python">import requests
-from requests.packages import urllib3
-
-urllib3.disable_warnings()    # 用来忽略警告
-response = requests.get(&quot;https://www.12306.cn&quot;, verify=False)     # 不检查ssl证书(之后会出现警告)
-print(response.status_code)   # 返回状态码(如果报错有可能是ssl证书验证错误,可以修改verify参数)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 代理设置(为了面对大规模且频繁的请求)</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import requests</span><br><span class="line">  proxies &#x3D; &#123;</span><br><span class="line">      &quot;http&quot;: &quot;http:&#x2F;&#x2F;182.34.37.212:9999&quot;,</span><br><span class="line">      &quot;https&quot;: &quot;http:&#x2F;&#x2F;113.195.165.96:9999&quot;,</span><br><span class="line">  &#125;   # 此ip需自己去网上找,一般找那种高匿的代理</span><br><span class="line">  </span><br><span class="line">  requests.get(&quot;https:&#x2F;&#x2F;www.taobao.com&quot;, proxies&#x3D;proxies)# 这个是不成功的</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>若代理需要http basic auth</p>
-</li>
-<li><pre><code class="python"># 若代理需要使用http basic auth可以使用http://user:password@host:port这样的语法
-proxies = &#123;
-    &quot;http&quot;: &quot;http://user:password@10.10.1.10:3128&quot;,
-&#125;
-response = requests.get(&quot;https://www.taobao.com&quot;, proxies=proxies)# 淘宝需要这个http basic auth代理
-print(response.text)# 成功
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- SOCKS协议代理(先用pip下载socks库:pip install &#39;requests[socks]&#39; -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple )</span><br><span class="line"></span><br><span class="line">- 格式跟auth不一样而已 比如 socks5:&#x2F;&#x2F;user:password@host:port</span><br><span class="line"></span><br><span class="line">- 超时设置(timeout参数控制)</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import requests</span><br><span class="line">  </span><br><span class="line">  r &#x3D; requests.get(&quot;http:&#x2F;&#x2F;www.taobao.com&quot;, timeout&#x3D;(5,10))   # 请求分为俩个阶段为连接和读取,</span><br><span class="line">  # timeout可以分别设置,若为none则一直等</span><br><span class="line">  print(r.text)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>身份验证(当遇到验证时)</p>
-</li>
-<li><pre><code class="python">import requests
-
-r = requests.get(&quot;http://www.taobao.com&quot;, auth=(&#39;username&#39;,&#39;password&#39;))   # 属于HTTP Basic auth验证 这个得看网站有没有这种验证
-print(r.status_code)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- OAuth验证(先pip下载oauth包:pip install requests_oauthlib -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple )</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import requests</span><br><span class="line">  from requests_oauthlib import OAuth1</span><br><span class="line">  </span><br><span class="line">  url &#x3D; &quot;https:&#x2F;&#x2F;api.twitter.com&#x2F;1.1&#x2F;account&#x2F;verify_credentials.json&quot;</span><br><span class="line">  auth &#x3D; OAuth1(&#39;YOUR_APP_KEY&#39;, &#39;YOUR_APP_SECRET&#39;, &#39;USER_OAUTH_TOKEN&#39;, &#39;USER_OAUTH_TOKEN_SECRET&#39;)</span><br><span class="line">  </span><br><span class="line">  requests.get(url, auth&#x3D;auth)# 这个是失败的</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>prepared request就是把请求封装成一个数据结构,每个参数可以通过一个Request对象来表示</p>
-</li>
-</ul>
-<h2 id="3-正则表达式的使用-详情见书本的P139"><a href="#3-正则表达式的使用-详情见书本的P139" class="headerlink" title="3:正则表达式的使用(详情见书本的P139)"></a>3:正则表达式的使用(详情见书本的P139)</h2><ul>
-<li><p><a target="_blank" rel="noopener" href="http://tool.oschina.net/regex/">推荐一个网站进行测试正则表达式</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/dreamingbaobei/p/9717234.html">常用的正则的表达式</a></p>
-</li>
-<li><p>match()匹配方法</p>
-</li>
-<li><p>findall()匹配</p>
-</li>
-</ul>
-<h2 id="4-抓取猫眼电影排行榜-实例分析"><a href="#4-抓取猫眼电影排行榜-实例分析" class="headerlink" title="4:抓取猫眼电影排行榜(实例分析)"></a>4:抓取猫眼电影排行榜(实例分析)</h2><ul>
-<li><p><a target="_blank" rel="noopener" href="https://maoyan.com/board/4">目标网站</a></p>
-</li>
-<li><p>首先的分析url的规律</p>
-</li>
-<li><p>先爬取一页的内容</p>
-</li>
-<li><pre><code class="python">import requests
-from requests.exceptions import RequestException
-import re
-import time
-
-
-# 先爬取一页的内容
-def get_one_page(url):
-    try:
-        headers = &#123;
-            &#39;User - Agent&#39;: &#39;Mozilla / 5.0(WindowsNT10.0;Win64;x64;rv: 85.0) Gecko / 20100101Firefox / 85.0&#39;  # 从Windows的火狐浏览器获取的
-        &#125;
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:  # 判断状态码
-            return response.text
-        return None
-    except RequestException:   # 捕捉异常
-        return None
-get_one_page(http://maoyan.com/board/4?offset=0)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 开始解析得到的html文件</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 解析每页的内容</span><br><span class="line">  def parse_one_page(html):</span><br><span class="line">      # 使用正则表达式</span><br><span class="line">      pattern &#x3D; re.compile(&#39;&lt;dd&gt;.*?board-index.*?&gt;(\d+)&lt;&#x2F;i&gt;.*?data-src&#x3D;&quot;(.*?)&quot;.*?name&quot;&gt;&lt;a&#39;+ &#39;.*?&gt;(.*?)&lt;&#x2F;a&gt;.*?star&quot;&gt;(.*?)&lt;&#x2F;p&gt;.*?releasetime&quot;&gt;(.*?)&lt;&#x2F;p&gt;&#39;+ &#39;.*?integer&quot;&gt;(.*?)&lt;&#x2F;i&gt;.*?fraction&quot;&gt;(.*?)&lt;&#x2F;i&gt;.*?&lt;&#x2F;dd&gt;&#39;, re.S)</span><br><span class="line">      items &#x3D; re.findall(pattern, html)</span><br><span class="line">      for item in items:   # 提取json文件的信息</span><br><span class="line">          yield &#123;</span><br><span class="line">              &#39;index&#39;: item[0],</span><br><span class="line">              &#39;image&#39;: item[1],</span><br><span class="line">              &#39;title&#39;: item[2],</span><br><span class="line">              &#39;actor&#39;: item[3].strip()[3:],</span><br><span class="line">              &#39;time&#39;: item[4].strip()[5:],</span><br><span class="line">              &#39;score&#39;: item[5] + item[6]</span><br><span class="line">          &#125;</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>写入函数与主函数的创建</p>
-</li>
-<li><pre><code class="python"># 开始写入result.txt文件
-def write_to_file(content):
-    with open(&#39;result.txt&#39;, &#39;a&#39;, encoding=&#39;utf-8&#39;) as f:
-        f.write(json.dumps(content, ensure_ascii=False) + &#39;\n&#39;)
-
-# 主函数
-def main(offset):
-    url = &#39;http://maoyan.com/board/4?offset=&#39; + str(offset)
-    html = get_one_page(url)
-    for item in parse_one_page(html):
-        print(item)
-        write_to_file(item)
-
-
-if __name__ == &#39;__main__&#39;:
-    for i in range(10):
-        main(offset=i * 10)
-        time.sleep(1)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 爬取猫眼数据</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import json</span><br><span class="line">  import requests</span><br><span class="line">  from requests.exceptions import RequestException</span><br><span class="line">  import re</span><br><span class="line">  import time</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  # 先爬取一页的内容</span><br><span class="line">  def get_one_page(url):</span><br><span class="line">      try:</span><br><span class="line">          headers &#x3D; &#123;</span><br><span class="line">              &#39;User - Agent&#39;: &#39;Mozilla &#x2F; 5.0(WindowsNT10.0;Win64;x64;rv: 85.0) Gecko &#x2F; 20100101Firefox &#x2F; 85.0&#39;</span><br><span class="line">          &#125;  # 我的是从Windows中火狐浏览器获取的</span><br><span class="line">          response &#x3D; requests.get(url, headers&#x3D;headers)</span><br><span class="line">          if response.status_code &#x3D;&#x3D; 200:</span><br><span class="line">              return response.text</span><br><span class="line">          return None</span><br><span class="line">      except RequestException:  # 捕捉异常处理</span><br><span class="line">          return None</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  # 开始解析每一页的内容</span><br><span class="line">  def parse_one_page(html):</span><br><span class="line">      pattern &#x3D; re.compile(&#39;&lt;dd&gt;.*?board-index.*?&gt;(\d+)&lt;&#x2F;i&gt;.*?data-src&#x3D;&quot;(.*?)&quot;.*?name&quot;&gt;&lt;a&#39;</span><br><span class="line">                           + &#39;.*?&gt;(.*?)&lt;&#x2F;a&gt;.*?star&quot;&gt;(.*?)&lt;&#x2F;p&gt;.*?releasetime&quot;&gt;(.*?)&lt;&#x2F;p&gt;&#39;</span><br><span class="line">                           + &#39;.*?integer&quot;&gt;(.*?)&lt;&#x2F;i&gt;.*?fraction&quot;&gt;(.*?)&lt;&#x2F;i&gt;.*?&lt;&#x2F;dd&gt;&#39;, re.S)</span><br><span class="line">      items &#x3D; re.findall(pattern, html)</span><br><span class="line">      for item in items:  # 将解析的内容生成json文件数据</span><br><span class="line">          yield &#123;</span><br><span class="line">              &#39;index&#39;: item[0],</span><br><span class="line">              &#39;image&#39;: item[1],</span><br><span class="line">              &#39;title&#39;: item[2],</span><br><span class="line">              &#39;actor&#39;: item[3].strip()[3:],</span><br><span class="line">              &#39;time&#39;: item[4].strip()[5:],</span><br><span class="line">              &#39;score&#39;: item[5] + item[6]</span><br><span class="line">          &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  # 写入文件操作</span><br><span class="line">  def write_to_file(content):</span><br><span class="line">      with open(&#39;result.txt&#39;, &#39;a&#39;, encoding&#x3D;&#39;utf-8&#39;) as f:</span><br><span class="line">          f.write(json.dumps(content, ensure_ascii&#x3D;False) + &#39;\n&#39;)</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  # 主函数</span><br><span class="line">  def main(offset):</span><br><span class="line">      url &#x3D; &#39;http:&#x2F;&#x2F;maoyan.com&#x2F;board&#x2F;4?offset&#x3D;&#39; + str(offset)</span><br><span class="line">      html &#x3D; get_one_page(url)</span><br><span class="line">      for item in parse_one_page(html):</span><br><span class="line">          print(item)</span><br><span class="line">          write_to_file(item)</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">      for i in range(10):</span><br><span class="line">          main(offset&#x3D;i * 10)</span><br><span class="line">          time.sleep(1)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>生成的result.txt文件</p>
-</li>
-<li><pre><code class="json">result.txt
-&#123;&quot;index&quot;: &quot;1&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/8112a8345d7f1d807d026282f2371008602126.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;肖申克的救赎&quot;, &quot;actor&quot;: &quot;蒂姆·罗宾斯,摩根·弗里曼,鲍勃·冈顿&quot;, &quot;time&quot;: &quot;1994-09-10(加拿大)&quot;, &quot;score&quot;: &quot;9.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;2&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/ac8f0004928fbce5a038a007b7c73cec746794.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;小偷家族&quot;, &quot;actor&quot;: &quot;中川雅也,安藤樱,松冈茉优&quot;, &quot;time&quot;: &quot;2018-08-03&quot;, &quot;score&quot;: &quot;8.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;3&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/609e45bd40346eb8b927381be8fb27a61760914.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;海上钢琴师&quot;, &quot;actor&quot;: &quot;蒂姆·罗斯,比尔·努恩,克兰伦斯·威廉姆斯三世&quot;, &quot;time&quot;: &quot;2019-11-15&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;4&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/61fea77024f83b3700603f6af93bf690585789.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;霸王别姬&quot;, &quot;actor&quot;: &quot;张国荣,张丰毅,巩俐&quot;, &quot;time&quot;: &quot;1993-07-26&quot;, &quot;score&quot;: &quot;9.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;5&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/005955214d5b3e50c910d7a511b0cb571445301.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;哪吒之魔童降世&quot;, &quot;actor&quot;: &quot;吕艳婷,囧森瑟夫,瀚墨&quot;, &quot;time&quot;: &quot;2019-07-26&quot;, &quot;score&quot;: &quot;9.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;6&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/6bea9af4524dfbd0b668eaa7e187c3df767253.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;这个杀手不太冷&quot;, &quot;actor&quot;: &quot;让·雷诺,加里·奥德曼,娜塔莉·波特曼&quot;, &quot;time&quot;: &quot;1994-09-14(法国)&quot;, &quot;score&quot;: &quot;9.4&quot;&#125;
-&#123;&quot;index&quot;: &quot;7&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/15f1ac49b6d1ff7b71207672993ed6901536456.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;怦然心动&quot;, &quot;actor&quot;: &quot;玛德琳·卡罗尔,卡兰·麦克奥利菲,艾丹•奎因&quot;, &quot;time&quot;: &quot;2010-07-26(美国)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;8&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/b41795c4a88479137e40ebdc3d7dc040238291.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;阿甘正传&quot;, &quot;actor&quot;: &quot;汤姆·汉克斯,罗宾·怀特,加里·西尼斯&quot;, &quot;time&quot;: &quot;1994-07-06(美国)&quot;, &quot;score&quot;: &quot;9.4&quot;&#125;
-&#123;&quot;index&quot;: &quot;9&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/eb5e33480a3d3b0f813673a33eb556381148211.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;触不可及&quot;, &quot;actor&quot;: &quot;弗朗索瓦·克鲁塞,奥玛·希,安娜·勒尼&quot;, &quot;time&quot;: &quot;2011-11-02(法国)&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;10&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/59c05effc4755c627901fb7e044d071d851055.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;楚门的世界&quot;, &quot;actor&quot;: &quot;金·凯瑞,劳拉·琳妮,诺亚·艾默里奇&quot;, &quot;time&quot;: &quot;1998(罗马尼亚)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;11&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/94138dc0290a74b35786b6e3b8ece8607940668.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;星际穿越&quot;, &quot;actor&quot;: &quot;马修·麦康纳,安妮·海瑟薇,杰西卡·查斯坦&quot;, &quot;time&quot;: &quot;2014-11-12&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;12&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/b0d986a8bf89278afbb19f6abaef70f31206570.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;辛德勒的名单&quot;, &quot;actor&quot;: &quot;连姆·尼森,拉尔夫·费因斯,本·金斯利&quot;, &quot;time&quot;: &quot;1993-11-30(美国)&quot;, &quot;score&quot;: &quot;9.2&quot;&#125;
-&#123;&quot;index&quot;: &quot;13&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/aeb864fa21d578d845b9cefc056e40cb2874891.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;摔跤吧！爸爸&quot;, &quot;actor&quot;: &quot;阿米尔·汗,沙克希·坦沃,法缇玛·萨那·纱卡&quot;, &quot;time&quot;: &quot;2017-05-05&quot;, &quot;score&quot;: &quot;9.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;14&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/f433a705dd26d96e95ba6582ddccf5ad1159253.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;寻梦环游记&quot;, &quot;actor&quot;: &quot;安东尼·冈萨雷斯,本杰明·布拉特,盖尔·加西亚·贝纳尔&quot;, &quot;time&quot;: &quot;2017-11-24&quot;, &quot;score&quot;: &quot;9.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;15&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/7707dc3478f9ab26871688f4964ae45d6672925.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;小丑&quot;, &quot;actor&quot;: &quot;华金·菲尼克斯,罗伯特·德尼罗,亚历克·鲍德温&quot;, &quot;time&quot;: &quot;2019-10-04(美国)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;16&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/04263651e43c11ce538b180988ff0a5e231189.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;忠犬八公的故事&quot;, &quot;actor&quot;: &quot;Forest,理查·基尔,琼·艾伦&quot;, &quot;time&quot;: &quot;2009-06-13(美国)&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;17&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/4e6e22ea788a72b1cf769bd5537bd38d37701.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;情书&quot;, &quot;actor&quot;: &quot;中山美穗,丰川悦司,范文雀&quot;, &quot;time&quot;: &quot;1999-03&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;18&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/e5daa8748733820faab91102bd0bc4507730353.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;当幸福来敲门&quot;, &quot;actor&quot;: &quot;威尔·史密斯,贾登·史密斯,坦迪·牛顿&quot;, &quot;time&quot;: &quot;2008-01-17&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;19&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/70de97ebb6b5251ecb7c3f6d7a782a7f189340.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;放牛班的春天&quot;, &quot;actor&quot;: &quot;热拉尔·朱尼奥,让-巴蒂斯特·莫尼耶,玛丽·布奈尔&quot;, &quot;time&quot;: &quot;2004-10-16&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;20&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/2a0783b4fd95566568f24adfad2181bb5392280.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;熔炉&quot;, &quot;actor&quot;: &quot;孔刘,郑有美,金智英&quot;, &quot;time&quot;: &quot;2011-09-22(韩国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;21&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/414176cfa3fea8bed9b579e9f42766b9686649.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;我不是药神&quot;, &quot;actor&quot;: &quot;徐峥,周一围,王传君&quot;, &quot;time&quot;: &quot;2018-07-05&quot;, &quot;score&quot;: &quot;9.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;22&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/1199dc6273680f175fd9b06c9c36d08a219658.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;教父&quot;, &quot;actor&quot;: &quot;马龙·白兰度,阿尔·帕西诺,詹姆斯·肯恩&quot;, &quot;time&quot;: &quot;2015-04-18&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;23&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/f8f6b8a6158a1a3d2f2ec8a8f024eef5306692.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;看不见的客人&quot;, &quot;actor&quot;: &quot;马里奥·卡萨斯,阿娜·瓦格纳,何塞·科罗纳多&quot;, &quot;time&quot;: &quot;2017-09-15&quot;, &quot;score&quot;: &quot;9.4&quot;&#125;
-&#123;&quot;index&quot;: &quot;24&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/52c8c57caeeaacbeaa3d54eec62023fd483970.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;头号玩家&quot;, &quot;actor&quot;: &quot;泰伊·谢里丹,奥利维亚·库克,本·门德尔森&quot;, &quot;time&quot;: &quot;2018-03-30&quot;, &quot;score&quot;: &quot;9.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;25&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/5b36b3c840e26e50aa65ea0c164c9903599336.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;被嫌弃的松子的一生&quot;, &quot;actor&quot;: &quot;中谷美纪,永山瑛太,伊势谷友介&quot;, &quot;time&quot;: &quot;2006-05-27(日本)&quot;, &quot;score&quot;: &quot;8.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;26&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/8609f509a07d64da4c8bdc58db7a440a369264.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;活着&quot;, &quot;actor&quot;: &quot;葛优,巩俐,牛犇&quot;, &quot;time&quot;: &quot;1994-05-17(法国)&quot;, &quot;score&quot;: &quot;9.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;27&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/76fc92cfa6c8f2959431b8aa604ef7ae126414.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;天堂电影院&quot;, &quot;actor&quot;: &quot;菲利浦·诺瓦雷,赛尔乔·卡斯特利托,蒂兹亚娜·罗达托&quot;, &quot;time&quot;: &quot;1988-09-29(意大利)&quot;, &quot;score&quot;: &quot;9.2&quot;&#125;
-&#123;&quot;index&quot;: &quot;28&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/f7d2ad70eb79d6d9b8a197713db9b8c41711752.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;复仇者联盟4：终局之战&quot;, &quot;actor&quot;: &quot;小罗伯特·唐尼,克里斯·埃文斯,马克·鲁法洛&quot;, &quot;time&quot;: &quot;2019-04-24&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;29&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/8d7b0b902afd4ec1a3dd7a9c6149463c187734.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;闻香识女人&quot;, &quot;actor&quot;: &quot;阿尔·帕西诺,克里斯·奥唐纳,加布里埃尔·安瓦尔&quot;, &quot;time&quot;: &quot;1992-12-23(美国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;30&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/0da7ffae67afeb5c63bd2d73efbe664c283994.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;请以你的名字呼唤我&quot;, &quot;actor&quot;: &quot;提莫西·查拉梅,艾米·汉莫,迈克尔·斯图巴&quot;, &quot;time&quot;: &quot;2017-01-22(美国)&quot;, &quot;score&quot;: &quot;8.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;31&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/081194992e014d3d7ff17aa7d0598179919881.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;末代皇帝&quot;, &quot;actor&quot;: &quot;尊龙,陈冲,彼得·奥图尔&quot;, &quot;time&quot;: &quot;1987-10-04(日本)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;32&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/757329b238641ca206127656a5f4ec44205272.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;飞越疯人院&quot;, &quot;actor&quot;: &quot;杰克·尼科尔森,路易丝·弗莱彻,威尔·萨姆森&quot;, &quot;time&quot;: &quot;1975-11-19(美国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;33&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/f86c7056a060f9144272d0ad7352fbd3302202.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;美国往事&quot;, &quot;actor&quot;: &quot;罗伯特·德尼罗,詹姆斯·伍兹,伊丽莎白·麦戈文&quot;, &quot;time&quot;: &quot;2015-04-23&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;34&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/28e51e8dac4bb132a037824227e54df9438711.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;窃听风暴&quot;, &quot;actor&quot;: &quot;乌尔里希·穆埃,塞巴斯蒂安·科赫,马蒂娜·格德克&quot;, &quot;time&quot;: &quot;2006-03-23(德国)&quot;, &quot;score&quot;: &quot;9.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;35&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/ecb99c1c324d6a50bb6c3303e9d49488216865.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;天使爱美丽&quot;, &quot;actor&quot;: &quot;奥黛丽·塔图,马修·卡索维茨,吕菲斯&quot;, &quot;time&quot;: &quot;2001-04-25(比利时)&quot;, &quot;score&quot;: &quot;8.4&quot;&#125;
-&#123;&quot;index&quot;: &quot;36&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/32ae5d0f25996ec169def65459a0f52f386220.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;飞屋环游记&quot;, &quot;actor&quot;: &quot;爱德华·阿斯纳,乔丹·长井,鲍勃·彼德森&quot;, &quot;time&quot;: &quot;2009-08-04&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;37&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/223c3e186db3ab4ea3bb14508c709400427933.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;乱世佳人&quot;, &quot;actor&quot;: &quot;费雯·丽,克拉克·盖博,奥利维娅·德哈维兰&quot;, &quot;time&quot;: &quot;1939-12-15(美国)&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;38&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/738840c7fc0d0fa3cd431f57f9d5a195337471.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;美丽心灵&quot;, &quot;actor&quot;: &quot;罗素·克劳,詹妮弗·康纳利,艾德·哈里斯&quot;, &quot;time&quot;: &quot;2001-12-13(美国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;39&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/289f98ceaa8a0ae737d3dc01cd05ab052213631.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;罗马假日&quot;, &quot;actor&quot;: &quot;格利高里·派克,奥黛丽·赫本,埃迪·艾伯特&quot;, &quot;time&quot;: &quot;1953-08-20(意大利)&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;40&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/eec5ce0066f81a649c4f7d2ffd353f22272301.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;蝴蝶效应&quot;, &quot;actor&quot;: &quot;约翰·帕特里克·阿梅多利,罗根·勒曼,卡梅隆·布莱特&quot;, &quot;time&quot;: &quot;2004-01-23(美国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;41&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/6cb23356f9d8e0b506349561c633310d102189.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;一一&quot;, &quot;actor&quot;: &quot;吴念真,金燕玲,李凯莉&quot;, &quot;time&quot;: &quot;2017-07-28(中国台湾)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;42&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/6ad00fae7818c87d4f4f623ee8708c421368881.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;消失的爱人&quot;, &quot;actor&quot;: &quot;本·阿弗莱克,裴淳华,尼尔·帕特里克·哈里斯&quot;, &quot;time&quot;: &quot;2014-09-26(美国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;43&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/b6167a97f67993bfef5053f7c78cfdc81986322.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;布达佩斯大饭店&quot;, &quot;actor&quot;: &quot;拉尔夫·费因斯,托尼·雷沃罗利,西尔莎·罗南&quot;, &quot;time&quot;: &quot;2014-06-14&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;44&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/621a8ea3736dfd97ca9cc05698d9bb71330853.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;低俗小说&quot;, &quot;actor&quot;: &quot;约翰·特拉沃尔塔,乌玛·瑟曼,塞缪尔·杰克逊&quot;, &quot;time&quot;: &quot;1994-05-21(法国)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;45&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/14dce6c3d296dd12a1d0841def25162b321241.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;海边的曼彻斯特&quot;, &quot;actor&quot;: &quot;卡西·阿弗莱克,卢卡斯·赫奇斯,米歇尔·威廉姆斯&quot;, &quot;time&quot;: &quot;2017-08-25&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;46&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/32958f447a4319a9483c300b2b4e1adc375046.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;爱在黎明破晓前&quot;, &quot;actor&quot;: &quot;伊桑·霍克,朱莉·德尔佩,安德莉亚·埃克特&quot;, &quot;time&quot;: &quot;1995-01-27(美国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;47&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/73c84696b0795c8d0c736857ebac8e951698003.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;超脱&quot;, &quot;actor&quot;: &quot;艾德里安·布洛迪,马西娅·盖伊·哈登,詹姆斯·肯恩&quot;, &quot;time&quot;: &quot;2011-04-25(美国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;48&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/cd1906f2ec6a137a5902bfbcbbd5bafd1635014.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;春光乍泄&quot;, &quot;actor&quot;: &quot;张国荣,梁朝伟,张震&quot;, &quot;time&quot;: &quot;1997-05-30(中国香港)&quot;, &quot;score&quot;: &quot;9.2&quot;&#125;
-&#123;&quot;index&quot;: &quot;49&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/13cc737c14e76278db116cf9210f697a371891.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;釜山行&quot;, &quot;actor&quot;: &quot;孔刘,郑有美,马东锡&quot;, &quot;time&quot;: &quot;2016-05-13(法国)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;50&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/606de8f394d40dbcbb9b87943fec71a2130408.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;无间道&quot;, &quot;actor&quot;: &quot;刘德华,梁朝伟,黄秋生&quot;, &quot;time&quot;: &quot;2003-09-05&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;51&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/20b81c48788d6f73a07fec370baabad4103840.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;爱在日落黄昏时&quot;, &quot;actor&quot;: &quot;伊桑·霍克,朱莉·德尔佩,弗农·多布切夫&quot;, &quot;time&quot;: &quot;2015-04-20&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;52&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/6a964e9cee699267053bd6a4bf6f2671195394.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;剪刀手爱德华&quot;, &quot;actor&quot;: &quot;约翰尼·德普,薇诺娜·瑞德,黛安娜·威斯特&quot;, &quot;time&quot;: &quot;1990-12-06(美国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;53&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/389058d95ea9e464d695cd1a8c7e285f440657.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;辩护人&quot;, &quot;actor&quot;: &quot;宋康昊,郭度沅,吴达洙&quot;, &quot;time&quot;: &quot;2013-12-18(韩国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;54&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/d94e5c3054778f6f48bff3a813b0b7cd5300998.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;波西米亚狂想曲&quot;, &quot;actor&quot;: &quot;拉米·马雷克,本·哈迪,约瑟夫•梅泽罗&quot;, &quot;time&quot;: &quot;2019-03-22&quot;, &quot;score&quot;: &quot;9.4&quot;&#125;
-&#123;&quot;index&quot;: &quot;55&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/ba1ed511668402605ed369350ab779d6319397.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;天空之城&quot;, &quot;actor&quot;: &quot;寺田农,鹫尾真知子,龟山助清&quot;, &quot;time&quot;: &quot;1992-05-01&quot;, &quot;score&quot;: &quot;9.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;56&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/d5970e36c8868a4b746c80f3b3f8a404174615.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;穿条纹睡衣的男孩&quot;, &quot;actor&quot;: &quot;阿沙·巴特菲尔德,维拉·法梅加,大卫·休里斯&quot;, &quot;time&quot;: &quot;2008-08-28(英国)&quot;, &quot;score&quot;: &quot;9.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;57&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/19653e8af59cf473cd40f9ccc0658d93692304.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;素媛&quot;, &quot;actor&quot;: &quot;李甄,薛耿求,严智苑&quot;, &quot;time&quot;: &quot;2013-10-02(韩国)&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;58&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/76476c7f8c6de60df8da6efae60c3542399799.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;心灵捕手&quot;, &quot;actor&quot;: &quot;罗宾·威廉姆斯,马特·达蒙,明妮·德里弗&quot;, &quot;time&quot;: &quot;1997-12-05(美国)&quot;, &quot;score&quot;: &quot;8.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;59&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/moviemachine/4d3f9e5f821e6e42b1ea48eb39c5df0e1293530.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;阿凡达&quot;, &quot;actor&quot;: &quot;萨姆·沃辛顿,佐伊·索尔达娜,米歇尔·罗德里格兹&quot;, &quot;time&quot;: &quot;2010-01-04&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;60&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/f5c02860c864f7375fe2c6237fc1deaf215307.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;重庆森林&quot;, &quot;actor&quot;: &quot;梁朝伟,王菲,金城武&quot;, &quot;time&quot;: &quot;1994-07-14(中国香港)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;61&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/36db8e805a15cc0475ebe3f0c9b56c9e782659.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;网络谜踪&quot;, &quot;actor&quot;: &quot;约翰·赵,米切尔·拉,黛博拉·梅辛&quot;, &quot;time&quot;: &quot;2018-12-14&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;62&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/686c2de9e4f416e592d09cb62b32f274390992.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;断背山&quot;, &quot;actor&quot;: &quot;希斯·莱杰,杰克·吉伦哈尔,米歇尔·威廉姆斯&quot;, &quot;time&quot;: &quot;2005-09-02(意大利)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;63&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/632e8039ca28809a6ab9d72673f388f3113539.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;两杆大烟枪&quot;, &quot;actor&quot;: &quot;杰森·弗莱明,德克斯特·弗莱彻,杰森•斯坦森&quot;, &quot;time&quot;: &quot;1998-08-28(英国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;64&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/7d94792dee7ac5964bbcbcd676a98081261728.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;控方证人&quot;, &quot;actor&quot;: &quot;泰隆·鲍华,玛琳·黛德丽,查尔斯·劳顿&quot;, &quot;time&quot;: &quot;1957-12-17(美国)&quot;, &quot;score&quot;: &quot;8.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;65&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/09658109acfea0e248a63932337d8e6a4268980.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;蝙蝠侠：黑暗骑士&quot;, &quot;actor&quot;: &quot;克里斯蒂安·贝尔,希斯·莱杰,阿伦·伊克哈特&quot;, &quot;time&quot;: &quot;2008-07-14(阿根廷)&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;66&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/961036f05fdfdd68fecb70fa0c579ca0238954.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;十二怒汉&quot;, &quot;actor&quot;: &quot;亨利·方达,李·科布,马丁·鲍尔萨姆&quot;, &quot;time&quot;: &quot;1957-04-13(美国)&quot;, &quot;score&quot;: &quot;9.1&quot;&#125;
-&#123;&quot;index&quot;: &quot;67&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/ca9cfca03292e207ceea03904d2c02e61096852.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;蜘蛛侠：平行宇宙&quot;, &quot;actor&quot;: &quot;沙梅克·摩尔,彭昱畅,杰克·M·约翰森&quot;, &quot;time&quot;: &quot;2018-12-21&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;68&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/11d86a5c644840374c7860f98ef19183264645.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;真爱至上&quot;, &quot;actor&quot;: &quot;休·格兰特,比尔·奈伊,连姆·尼森&quot;, &quot;time&quot;: &quot;2003-11-21(英国)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;69&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/611821c86367c6d9d0d663047407df59654543.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;血战钢锯岭&quot;, &quot;actor&quot;: &quot;安德鲁·加菲尔德,雨果·维文,卢克·布雷西&quot;, &quot;time&quot;: &quot;2016-12-08&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;70&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/0b1474181d53a328c2e87d018fa088b9241815.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;大鱼&quot;, &quot;actor&quot;: &quot;伊万·麦克格雷格,阿尔伯特·芬尼,杰西卡·兰格&quot;, &quot;time&quot;: &quot;2003-12-04(美国)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;71&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/e5e49dad53d8cfba7316d486e799345c395906.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;奇迹男孩&quot;, &quot;actor&quot;: &quot;雅各布·特瑞布雷,朱莉娅·罗伯茨,欧文·威尔逊&quot;, &quot;time&quot;: &quot;2018-01-19&quot;, &quot;score&quot;: &quot;9.2&quot;&#125;
-&#123;&quot;index&quot;: &quot;72&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/ef83b1e2ef6fa1e6f736521a356b829a334336.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;致命魔术&quot;, &quot;actor&quot;: &quot;休·杰克曼,克里斯蒂安·贝尔,迈克尔·凯恩&quot;, &quot;time&quot;: &quot;2006-10-17(意大利)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;73&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/55d9fcd5bc528636070c0307bac17037405534.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;时空恋旅人&quot;, &quot;actor&quot;: &quot;瑞秋·麦克亚当斯,多姆纳尔·格里森,比尔·奈伊&quot;, &quot;time&quot;: &quot;2013-09-04(英国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;74&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/36b6c8f22eb9caa138cdf6f106b560b5857917.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;模仿游戏&quot;, &quot;actor&quot;: &quot;本尼迪克特·康伯巴奇,凯拉·奈特莉,马修·古迪&quot;, &quot;time&quot;: &quot;2015-07-21&quot;, &quot;score&quot;: &quot;9.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;75&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/36b48755fc2fe614647c10838866aa14152884.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;黑天鹅&quot;, &quot;actor&quot;: &quot;娜塔莉·波特曼,文森特·卡索,米拉·库妮丝&quot;, &quot;time&quot;: &quot;2010-09-01(意大利)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;76&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/8d54378f5aa5891b27da166063fe5efe793583.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;饮食男女&quot;, &quot;actor&quot;: &quot;郎雄,吴倩莲,杨贵媚&quot;, &quot;time&quot;: &quot;1994-08-03(美国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;77&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/985156d0619734f9eacb45d15e2ba3231323113.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;禁闭岛&quot;, &quot;actor&quot;: &quot;莱昂纳多·迪卡普里奥,马克·鲁法洛,本·金斯利&quot;, &quot;time&quot;: &quot;2010-02-13(德国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;78&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/34f9202c5e823f490ffec4c69d5d0028137395.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;鬼子来了&quot;, &quot;actor&quot;: &quot;姜文,姜宏波,陈强&quot;, &quot;time&quot;: &quot;2000-05-13(法国)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;79&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/8834e6905cba927646661ed25e9c95d1136086.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;猫鼠游戏&quot;, &quot;actor&quot;: &quot;莱昂纳多·迪卡普里奥,汤姆·汉克斯,克里斯托弗·沃肯&quot;, &quot;time&quot;: &quot;2003-04-11&quot;, &quot;score&quot;: &quot;8.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;80&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/389d81144eab106ac08c870bb4e366be547402.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;钢琴家&quot;, &quot;actor&quot;: &quot;艾德里安·布洛迪,艾米莉娅·福克斯,米哈乌·热布罗夫斯基&quot;, &quot;time&quot;: &quot;2002-05-24(法国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;81&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/0127b451d5b8f0679c6f81c8ed414bb2432442.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;哈尔的移动城堡&quot;, &quot;actor&quot;: &quot;倍赏千惠子,木村拓哉,美轮明宏&quot;, &quot;time&quot;: &quot;2004-09-05(意大利)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;82&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/b64a002dfcabcfbec61feb1c75b2417a828023.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;傲慢与偏见&quot;, &quot;actor&quot;: &quot;马修·麦克费登,吉娜·马隆,妲露拉·莱莉&quot;, &quot;time&quot;: &quot;2008-02-10&quot;, &quot;score&quot;: &quot;8.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;83&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/73272392576659a804f3a9a779263954201204.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;记忆碎片&quot;, &quot;actor&quot;: &quot;盖·皮尔斯,凯瑞-安·莫斯,乔·潘托里亚诺&quot;, &quot;time&quot;: &quot;2000-09-05(意大利)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;84&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/9f8e4aac6eb153888a4fd961d6c2bf83213708.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;入殓师&quot;, &quot;actor&quot;: &quot;本木雅弘,山崎努,广末凉子&quot;, &quot;time&quot;: &quot;2008-09-10&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;85&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/65405f48cce489cac97a2506728633db215470.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;沉默的羔羊&quot;, &quot;actor&quot;: &quot;彼得·方达,菲利浦·凯瑞,诺布尔·威林厄姆&quot;, &quot;time&quot;: &quot;1991-02-14(美国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;86&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/9845714850a4f46581957e5cf0f7d60a635019.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;告白&quot;, &quot;actor&quot;: &quot;松隆子,桥本爱,西井幸人&quot;, &quot;time&quot;: &quot;2010-06-05(日本)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;87&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/ccbca1ee4e4ee78996878ceb9fddeb42271510.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;完美陌生人&quot;, &quot;actor&quot;: &quot;朱塞佩·巴蒂斯通,安娜·福列塔,马可·贾利尼&quot;, &quot;time&quot;: &quot;2018-05-25&quot;, &quot;score&quot;: &quot;8.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;88&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/1f55885b029fbc13a21ba220245a0596256913.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;二十二&quot;, &quot;actor&quot;: &quot;毛银梅,何玉珍,李凤云&quot;, &quot;time&quot;: &quot;2017-08-14&quot;, &quot;score&quot;: &quot;9.2&quot;&#125;
-&#123;&quot;index&quot;: &quot;89&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/4eb86db29c50974bc0a8cbcd71621f15794333.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;杀人回忆&quot;, &quot;actor&quot;: &quot;宋康昊,朴海日,边熙峰&quot;, &quot;time&quot;: &quot;2003-05-02(韩国)&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;90&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/eb2ea56996f21e7fb47b1a0736c7f177258901.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;海豚湾&quot;, &quot;actor&quot;: &quot;里克·奥巴瑞,路易·西霍尤斯,哈迪·琼斯&quot;, &quot;time&quot;: &quot;2009-07-31(美国)&quot;, &quot;score&quot;: &quot;8.9&quot;&#125;
-&#123;&quot;index&quot;: &quot;91&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/c105ed1f6b3d14eac7b612939cc1758a119652.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;大佛普拉斯&quot;, &quot;actor&quot;: &quot;陈竹昇,庄益增,戴立忍&quot;, &quot;time&quot;: &quot;2017-06-29(中国台湾)&quot;, &quot;score&quot;: &quot;8.2&quot;&#125;
-&#123;&quot;index&quot;: &quot;92&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/c6e2ed2947878c0797fa9f369de6a968163198.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;朗读者&quot;, &quot;actor&quot;: &quot;凯特·温丝莱特,拉尔夫·费因斯,大卫·克劳斯&quot;, &quot;time&quot;: &quot;2008-12-12(美国)&quot;, &quot;score&quot;: &quot;8.3&quot;&#125;
-&#123;&quot;index&quot;: &quot;93&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/ec79d4643bde827b9ca387a7c61f9b7e55177.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;牯岭街少年杀人事件&quot;, &quot;actor&quot;: &quot;张震,杨静怡,张国柱&quot;, &quot;time&quot;: &quot;1991-07-27(中国台湾)&quot;, &quot;score&quot;: &quot;8.4&quot;&#125;
-&#123;&quot;index&quot;: &quot;94&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/14c3c1f9300fb6d84ab00060f600b142672293.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;阳光灿烂的日子&quot;, &quot;actor&quot;: &quot;夏雨,宁静,耿乐&quot;, &quot;time&quot;: &quot;1995-08-21&quot;, &quot;score&quot;: &quot;8.6&quot;&#125;
-&#123;&quot;index&quot;: &quot;95&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/b1740b6264f347009bb9764a956d661a190897.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;色，戒&quot;, &quot;actor&quot;: &quot;梁朝伟,汤唯,陈冲&quot;, &quot;time&quot;: &quot;2007-11-01&quot;, &quot;score&quot;: &quot;8.0&quot;&#125;
-&#123;&quot;index&quot;: &quot;96&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/54fc8afff07dbfce15bf748ab6d2a220334923.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;致命ID&quot;, &quot;actor&quot;: &quot;约翰·库萨克,雷·利奥塔,阿曼达·皮特&quot;, &quot;time&quot;: &quot;2003-04-25(美国)&quot;, &quot;score&quot;: &quot;8.7&quot;&#125;
-&#123;&quot;index&quot;: &quot;97&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/7a3c292b6fc873aa535934316e55d4b1235144.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;玛丽和马克思&quot;, &quot;actor&quot;: &quot;托妮·科莱特,菲利普·塞默·霍夫曼,艾瑞克·巴纳&quot;, &quot;time&quot;: &quot;2009-01-15(美国)&quot;, &quot;score&quot;: &quot;8.5&quot;&#125;
-&#123;&quot;index&quot;: &quot;98&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/9845ab5ab9110e28a5fc3cd95d17ab47235132.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;无人知晓&quot;, &quot;actor&quot;: &quot;柳乐优弥,北浦爱,木村飞影&quot;, &quot;time&quot;: &quot;2006-06-19&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;99&quot;, &quot;image&quot;: &quot;https://p0.meituan.net/movie/ee313555a513f287b478109a42433c21185623.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;第六感&quot;, &quot;actor&quot;: &quot;布鲁斯·威利斯,海利·乔·奥斯蒙,托妮·科莱特&quot;, &quot;time&quot;: &quot;1999-08-06(美国)&quot;, &quot;score&quot;: &quot;8.8&quot;&#125;
-&#123;&quot;index&quot;: &quot;100&quot;, &quot;image&quot;: &quot;https://p1.meituan.net/movie/ec6270cfaf2bce352128cedca757dd8b588884.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;再次出发之纽约遇见你&quot;, &quot;actor&quot;: &quot;凯拉·奈特莉,马克·鲁法洛,亚当·莱文&quot;, &quot;time&quot;: &quot;2015-06-26&quot;, &quot;score&quot;: &quot;9.2&quot;&#125;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 不能重复爬取,因为会出现验证的情况,下面也会讲解验证的情况,若第二次爬取的话将得不到任何东西!</span><br><span class="line"></span><br><span class="line"># 2:解析库的使用</span><br><span class="line"></span><br><span class="line">## 	1:xpath的使用([参考学习网站](https:&#x2F;&#x2F;www.freesion.com&#x2F;article&#x2F;41141343851&#x2F;#1XPath_5))</span><br><span class="line"></span><br><span class="line">- xpath全称为 xml path language即是对xml的路径语言</span><br><span class="line"></span><br><span class="line">- xpath的常用规则</span><br><span class="line"></span><br><span class="line">- ![image-20210209155419036](C:\Users\hyf\Desktop\python 教学\image-20210209155419036.png)</span><br><span class="line"></span><br><span class="line">- 简单示例</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  from lxml import etree</span><br><span class="line">  # 需要解析的xml文件</span><br><span class="line">  text &#x3D; &#39;&#39;&#39;</span><br><span class="line">  &lt;div&gt; </span><br><span class="line">  &lt;ul&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;item-0&quot;&gt; &lt;a href&#x3D;&quot;link1.html&quot;&gt; first item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;item-1&quot;&gt; &lt;a href&#x3D;&quot;link2.html&quot;&gt; second item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;item-inactive&quot;&gt; &lt;a href&#x3D;&quot;link3.html&quot;&gt; third item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;item-1&quot;&gt; &lt;a href&#x3D;&quot;link4.html&quot;&gt; fourth item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;item-0&quot;&gt; &lt;a href&#x3D;&quot;link5.html&quot;&gt; fifth item &lt;&#x2F;a&gt; </span><br><span class="line">  &lt;&#x2F;ul&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">  &#39;&#39;&#39;</span><br><span class="line">  html &#x3D; etree.HTML(text)   # 调用HTML对象对xml文件进行初始化</span><br><span class="line">  result &#x3D; etree.tostring(html)  # 利用tostring转换为xml解析对象</span><br><span class="line">  print(result.decode(&#39;utf-8&#39;))   # 用decode将字节流类型的文件转换str类型  用etree可以修复HTML文本</span><br><span class="line">  # 生成test.html文件</span><br><span class="line">  #&lt;html&gt;&lt;body&gt;&lt;div&gt;</span><br><span class="line">  #&lt;ul&gt;</span><br><span class="line">  #&lt;li class&#x3D;&quot;item-0&quot;&gt; &lt;a href&#x3D;&quot;link1.html&quot;&gt; first item #&lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  #&lt;li class&#x3D;&quot;item-1&quot;&gt; &lt;a href&#x3D;&quot;link2.html&quot;&gt; second item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  #&lt;li class&#x3D;&quot;item-inactive&quot;&gt; &lt;a href&#x3D;&quot;link3.html&quot;&gt; #third item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  #&lt;li class&#x3D;&quot;item-1&quot;&gt; &lt;a href&#x3D;&quot;link4.html&quot;&gt; fourth item &lt;&#x2F;a&gt; &lt;&#x2F;li&gt;</span><br><span class="line">  #&lt;li class&#x3D;&quot;item-0&quot;&gt; &lt;a href&#x3D;&quot;link5.html&quot;&gt; fifth item #&lt;&#x2F;a&gt;</span><br><span class="line">  #&lt;&#x2F;li&gt;&lt;&#x2F;ul&gt;</span><br><span class="line">  #&lt;&#x2F;div&gt;</span><br><span class="line">  #&lt;&#x2F;body&gt;&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>用xpath对test.html文件进行进一步的完善</p>
-</li>
-<li><pre><code class="python">from lxml import etree
-
-html = etree.parse(&#39;./test.html&#39;, etree.HTMLParser())    # 将text.html文件转换xml解析对象
-result = etree.tostring(html)
-a = result.decode(&#39;utf-8&#39;)
-print(result.decode(&#39;utf-8&#39;))
-with open(&#39;test1.html&#39;, &#39;w&#39;) as f:
-    f.write(a)
-# test1.html
-# &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/REC-html40/loose.dtd&quot;&gt;
-# &lt;html&gt;&lt;body&gt;&lt;div&gt;&amp;#13;
-# &lt;ul&gt;&amp;#13;
-# &lt;li class=&quot;item-0&quot;&gt; &lt;a href=&quot;link1.html&quot;&gt; first item &lt;/a&gt; &lt;/li&gt;&amp;#13;
-# &lt;li class=&quot;item-1&quot;&gt; &lt;a href=&quot;link2.html&quot;&gt; second item &lt;/a&gt; &lt;/li&gt;&amp;#13;
-# &lt;li class=&quot;item-inactive&quot;&gt; &lt;a href=&quot;link3.html&quot;&gt; third item &lt;/a&gt; &lt;/li&gt;&amp;#13;
-# &lt;li class=&quot;item-1&quot;&gt; &lt;a href=&quot;link4.html&quot;&gt; fourth item &lt;/a&gt; &lt;/li&gt;&amp;#13;
-# &lt;li class=&quot;item-0&quot;&gt; &lt;a href=&quot;link5.html&quot;&gt; fifth item &lt;/a&gt;&amp;#13;
-# &lt;/li&gt;&lt;/ul&gt;&amp;#13;
-# &lt;/div&gt;&amp;#13;
-# &lt;/body&gt;&lt;/html&gt;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 获取所有节点(对Element类型数据操作在后面讲解)</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 开始获取所有节点</span><br><span class="line">  html &#x3D; etree.parse(&#39;test1.html&#39;, etree.HTMLParser())  # 生成xpath解析对象</span><br><span class="line">  result &#x3D; html.xpath(&#39;&#x2F;&#x2F;*&#39;)   # 寻找所节点 * 代表所有节点 result为Element类型元素</span><br><span class="line">  result1 &#x3D; html.xpath(&#39;&#x2F;&#x2F;li&#39;)</span><br><span class="line">  print(result1[0])  # 打印第一个li节点 </span><br><span class="line">  # result </span><br><span class="line">  # [&lt;Element html at 0x1d393ffee08&gt;, &lt;Element body at 0x1d393ffef08&gt;, &lt;Element div at 0x1d393ffef48&gt;, </span><br><span class="line">  # &lt;Element ul at 0x1d393ffef88&gt;, &lt;Element li at 0x1d393ffefc8&gt;, &lt;Element a at 0x1d394009088&gt;, &lt;Element li at 0x1d3940090c8&gt;,</span><br><span class="line">  # &lt;Element a at 0x1d394009108&gt;, &lt;Element li at 0x1d394009148&gt;, &lt;Element a at 0x1d394009048&gt;, &lt;Element li at 0x1d394009188&gt;, </span><br><span class="line">  # &lt;Element a at 0x1d3940091c8&gt;, &lt;Element li at 0x1d394009208&gt;, &lt;Element a at 0x1d394009248&gt;]</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>获取子节点(/用于获取直接子节点,//用于获取子孙节点)</p>
-</li>
-<li><pre><code class="python">from lxml import etree
-
-# 获取子节点
-
-html = etree.parse(&#39;test1.html&#39;, etree.HTMLParser())   # 生成解析对象
-result = html.xpath(&#39;//li/a&#39;)  # 获取li里面的a子节点 若获取所有ul下所有a子孙节点则用//ul//a  生成的是Element类型的数据
-print(result)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 获取父节点</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  from lxml import etree</span><br><span class="line">  </span><br><span class="line">  # 获取父节点</span><br><span class="line">  </span><br><span class="line">  html &#x3D; etree.parse(&#39;test1.html&#39;, etree.HTMLParser())  # 生成解析对象</span><br><span class="line">  </span><br><span class="line">  # 查找href属性为link4.html的父节点a  一般用..获取</span><br><span class="line">  result &#x3D; html.xpath(&#39;&#x2F;&#x2F;a[@href&#x3D;&quot;link4.html&quot;]&#x2F;..&#x2F;@class&#39;)   # &#x2F;可以获取其直接子节点,因此可以获取直接父节点,并且获取父节点class属性值</span><br><span class="line">  print(result)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>属性匹配(用@符号进行过滤)</p>
-</li>
-<li><pre><code class="python">from lxml import etree
-
-# 属性匹配
-
-html = etree.parse(&#39;test1.html&#39;, etree.HTMLParser())  # 生成解析对象
-
-result = html.xpath(&#39;//li[@class=&quot;item-0&quot;]&#39;)   # 获取li元素并且class属性为item-0的元素
-print(result)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 文本获取(通常用text())</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  from lxml import etree</span><br><span class="line">  </span><br><span class="line">  # 获取文本</span><br><span class="line">  </span><br><span class="line">  html &#x3D; etree.parse(&#39;test1.html&#39;, etree.HTMLParser())   # 生成解析对象</span><br><span class="line">  </span><br><span class="line">  result &#x3D; html.xpath(&#39;&#x2F;&#x2F;li[@class&#x3D;&quot;item-0&quot;]&#x2F;a&#x2F;text()&#39;)   # 获取li元素并且class属性为item-0的元素的子节点a的文本   若用a&#x2F;&#x2F;text() 获取的</span><br><span class="line">  </span><br><span class="line">  print(result)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>属性获取(通常还是用@)</p>
-</li>
-<li><pre><code class="python"># 属性获取
-
-html = etree.parse(&#39;test1.html&#39;, etree.HTMLParser())   # 生成解析器对象
-
-result = html.xpath(&#39;//li/a/@href&#39;)    # 获取li下所有a元素的href属性值
-print(result) 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 属性多值匹配()</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  from lxml import etree</span><br><span class="line">  </span><br><span class="line">  # 属性多值匹配</span><br><span class="line">  # text &#x3D; &#39;&#39;&#39;</span><br><span class="line">  # &lt;li class&#x3D;&quot;li li-first&quot;&gt;&lt;a href&#x3D;&quot;link.html&quot;&gt;first item&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">  # &#39;&#39;&#39;</span><br><span class="line">  #</span><br><span class="line">  # html &#x3D; etree.parse(text, etree.HTMLParser())</span><br><span class="line">  #</span><br><span class="line">  # result &#x3D; html.xpath(&#39;&#x2F;&#x2F;li[@class&#x3D;&quot;li&quot;]&#x2F;a&#x2F;text()&#39;)</span><br><span class="line">  # print(result)   结果是[]</span><br><span class="line">  # 必须使用contains方法处理多属性</span><br><span class="line">  text &#x3D; &#39;&#39;&#39;</span><br><span class="line">  &lt;li class&#x3D;&quot;li li-first&quot;&gt;&lt;a href&#x3D;&quot;link.html&quot;&gt;first item&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;</span><br><span class="line">  &#39;&#39;&#39;</span><br><span class="line">  html &#x3D; etree.HTML(text)</span><br><span class="line">  </span><br><span class="line">  result &#x3D; html.xpath(&#39;&#x2F;&#x2F;li[contains(@class,&quot;li&quot;)]&#x2F;a&#x2F;text()&#39;)</span><br><span class="line">  print(result)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>多属性匹配()</p>
-</li>
-<li><pre><code class="python">from lxml import etree
-
-
-# 多属性匹配
-
-text = &#39;&#39;&#39;
-&lt;li class=&quot;li li-first&quot; name=&quot;item&quot;&gt;&lt;a href=&quot;link.html&quot;&gt;first item&lt;/a&gt;&lt;/li&gt;
-&#39;&#39;&#39;
-
-html = etree.HTML(text)
-
-result = html.xpath(&#39;//li[contains(@class, &quot;li&quot;) and @name=&quot;item&quot;]/a/text()&#39;)
-
-print(result)   # 结果[&#39;first item&#39;]
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 按序选择</span><br><span class="line"></span><br><span class="line">- 节点轴选择</span><br><span class="line"></span><br><span class="line">- xpath的实例讲解</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import  requests</span><br><span class="line">  from lxml import etree</span><br><span class="line">  import os</span><br><span class="line">  #需求：解析出所有城市名称</span><br><span class="line">  if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span><br><span class="line">      #爬取到页面源码数据</span><br><span class="line">      url &#x3D;&quot;https:&#x2F;&#x2F;www.aqistudy.cn&#x2F;historydata&#x2F;&quot;</span><br><span class="line">      # 添加请求头</span><br><span class="line">      headers &#x3D; &#123;</span><br><span class="line">          &#39;User-Agent&#39;: &#39;Mozilla&#x2F;5.0 (Linux; Android 6.0; Nexus 5 Build&#x2F;MRA58N) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;88.0.4324.104 Mobile Safari&#x2F;537.36&#39;</span><br><span class="line">      &#125;</span><br><span class="line">      page_text &#x3D; requests.get(url &#x3D;url,headers &#x3D; headers).text</span><br><span class="line">      # print(page_text)</span><br><span class="line">      tree &#x3D; etree.HTML(page_text)</span><br><span class="line">      #解析热门城市和所有城市对应的a标签</span><br><span class="line">      # div[@class&#x3D;&quot;bottom&quot;]&#x2F;ul&#x2F;li&#x2F;a  热门城市a标签的层级关系</span><br><span class="line">      # div[@class&#x3D;&quot;bottom&quot;]&#x2F;ul&#x2F;div[2]&#x2F;li&#x2F;a  全部城市a标签的层级关系</span><br><span class="line">      all_city_names &#x3D; []</span><br><span class="line">      a_list &#x3D; tree.xpath(&#39;&#x2F;&#x2F;div[@class&#x3D;&quot;bottom&quot;]&#x2F;ul&#x2F;li&#x2F;a | &#x2F;&#x2F;div[@class&#x3D;&quot;bottom&quot;]&#x2F;ul&#x2F;div[2]&#x2F;li&#x2F;a&#39;)</span><br><span class="line">      print(a_list)  # 获取&#x2F;&#x2F;div[@class&#x3D;&quot;bottom&quot;]&#x2F;ul&#x2F;li&#x2F;a | &#x2F;&#x2F;div[@class&#x3D;&quot;bottom&quot;]&#x2F;ul&#x2F;div[2]&#x2F;li&#x2F;a a元素</span><br><span class="line">      for a in a_list:</span><br><span class="line">          city_name &#x3D; a.xpath(&#39;.&#x2F;text()&#39;)[0]       # 获取a元素的内容</span><br><span class="line">          all_city_names.append(city_name)</span><br><span class="line">      print(all_city_names,len(all_city_names))</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li></li>
-</ul>
-<h2 id="2-Beautiful-Soup的使用"><a href="#2-Beautiful-Soup的使用" class="headerlink" title="2:Beautiful Soup的使用"></a>2:Beautiful Soup的使用</h2><ul>
-<li><h2 id="3-pyquery的使用"><a href="#3-pyquery的使用" class="headerlink" title="3:pyquery的使用"></a>3:pyquery的使用</h2></li>
-<li></li>
-</ul>
-<h1 id="3-数据存储"><a href="#3-数据存储" class="headerlink" title="3:数据存储"></a>3:数据存储</h1><h2 id="1-一般文件的操作-txt-json-csv"><a href="#1-一般文件的操作-txt-json-csv" class="headerlink" title="1:一般文件的操作(txt,json,csv)"></a>1:一般文件的操作(txt,json,csv)</h2><ul>
-<li></li>
-</ul>
-<h2 id="2-关系数据库存储"><a href="#2-关系数据库存储" class="headerlink" title="2:关系数据库存储"></a>2:关系数据库存储</h2><ul>
-<li><p>MySQL的使用</p>
-</li>
-<li><p>1:准备工作</p>
-</li>
-<li><p>安装mysql并且安装第三方库pymysql</p>
-</li>
-<li><p>2:连接数据库</p>
-</li>
-<li><pre><code class="python">import pymysql
-
-# 连接数据库
-db = pymysql.connect(host=&#39;localhost&#39;, user=&#39;root&#39;, password=&#39;hu15879093053&#39;, port=3306)
-cursor = db.cursor()
-cursor.execute(&#39;SELECT VERSION()&#39;)  # 执行mysql命令
-data = cursor.fetchone()  # 获取版本号
-print(&#39;Database version: &#39;, data)
-cursor.execute(&quot;CREATE DATABASE spiders DEFAULT CHARACTER SET utf8&quot;)  # 创建spiders数据库
-db.close()  # 关闭数据库
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 3:创建表</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import pymysql</span><br><span class="line">  </span><br><span class="line">  # 创建表</span><br><span class="line">  db &#x3D; pymysql.connect(host&#x3D;&#39;localhost&#39;, user&#x3D;&#39;root&#39;, password&#x3D;&#39;hu15879093053&#39;, port&#x3D;3306, db&#x3D;&#39;spiders&#39;)</span><br><span class="line">  cursor &#x3D; db.cursor()  # 获取mysql操作游标</span><br><span class="line">  sql &#x3D; &#39;create table if not exists students(id varchar(255) not null ,name varchar(255) not null ,age int not null ,&#39; \</span><br><span class="line">        &#39;primary key (id)) &#39;</span><br><span class="line">  cursor.execute(sql)  # 执行sql命令创建students数据表</span><br><span class="line">  db.close()</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>4:插入数据</p>
-</li>
-<li><pre><code class="python">import pymysql
-
-# 插入数据
-id = &#39;20120001&#39;
-user = &#39;Bob&#39;
-age = 20
-db = pymysql.connect(host=&#39;localhost&#39;, user=&#39;root&#39;, password=&#39;hu15879093053&#39;, port=3306, db=&#39;spiders&#39;)
-cursor = db.cursor()  # 获取mysql操作游标
-
-sql = &#39;insert into students(id,name,age) values (%s,%s,%s)&#39;
-
-try:
-    cursor.execute(sql, (id, user, age))
-    db.commit()  # 提交数据
-except:
-    db.rollback()   # 数据回滚
-db.close()
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 5:更新数据</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  import pymysql</span><br><span class="line">  # 更新数据</span><br><span class="line">  db &#x3D; pymysql.connect(host&#x3D;&#39;localhost&#39;, user&#x3D;&#39;root&#39;, password&#x3D;&#39;hu15879093053&#39;, port&#x3D;3306, db&#x3D;&#39;spiders&#39;)</span><br><span class="line">  cursor &#x3D; db.cursor()  # 获取mysql操作游标</span><br><span class="line">  sql &#x3D; &#39;update studens set age&#x3D;%s where name&#x3D;%s&#39;</span><br><span class="line">  try:</span><br><span class="line">      cursor.execute(sql,(25,&#39;Bob&#39;))</span><br><span class="line">      db.commit()</span><br><span class="line">  except:</span><br><span class="line">      db.rollback()</span><br><span class="line">  db.close()</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>6:删除数据</p>
-</li>
-<li></li>
-<li><p>7:查询数据</p>
-</li>
-</ul>
-<h2 id="3-非关系数据库存储"><a href="#3-非关系数据库存储" class="headerlink" title="3:非关系数据库存储"></a>3:非关系数据库存储</h2><ul>
-<li><h1 id="4-Ajax数据爬取"><a href="#4-Ajax数据爬取" class="headerlink" title="4:Ajax数据爬取"></a>4:Ajax数据爬取</h1></li>
-</ul>
-<h2 id="1-什么是Ajax"><a href="#1-什么是Ajax" class="headerlink" title="1:什么是Ajax"></a>1:什么是Ajax</h2><ul>
-<li><h2 id="2-Ajax分析方法"><a href="#2-Ajax分析方法" class="headerlink" title="2:Ajax分析方法"></a>2:Ajax分析方法</h2></li>
-<li><p>查看请求</p>
-</li>
-<li><p>![查看请求](C:\Users\hyf\Desktop\python 教学\查看请求.png)</p>
-</li>
-<li><p>![查找请求1](C:\Users\hyf\Desktop\python 教学\查找请求1.PNG)</p>
-</li>
-<li><p>过滤请求</p>
-</li>
-<li><p>![过滤请求](C:\Users\hyf\Desktop\python 教学\过滤请求.PNG)</p>
-</li>
-</ul>
-<h2 id="3-Ajax结果提取"><a href="#3-Ajax结果提取" class="headerlink" title="3:Ajax结果提取"></a>3:Ajax结果提取</h2><ul>
-<li>分析请求(同上)</li>
-<li>详细分析Ajax爬取今日头条街拍美图(如下)</li>
-</ul>
-<h2 id="4-分析Ajax爬取今日头条街拍美图"><a href="#4-分析Ajax爬取今日头条街拍美图" class="headerlink" title="4:分析Ajax爬取今日头条街拍美图"></a>4:分析Ajax爬取今日头条街拍美图</h2><ul>
-<li><h1 id="5-动态渲染页面爬取"><a href="#5-动态渲染页面爬取" class="headerlink" title="5:动态渲染页面爬取"></a>5:动态渲染页面爬取</h1></li>
-</ul>
-<h2 id="1-Selenium的使用"><a href="#1-Selenium的使用" class="headerlink" title="1:Selenium的使用"></a>1:Selenium的使用</h2><ul>
-<li><h2 id="2-Splash的使用"><a href="#2-Splash的使用" class="headerlink" title="2:Splash的使用"></a>2:Splash的使用</h2></li>
-<li></li>
-</ul>
-<h2 id="3-splash负载均衡配置"><a href="#3-splash负载均衡配置" class="headerlink" title="3:splash负载均衡配置"></a>3:splash负载均衡配置</h2><ul>
-<li><h2 id="4-使用selenium爬取淘宝商品"><a href="#4-使用selenium爬取淘宝商品" class="headerlink" title="4:使用selenium爬取淘宝商品"></a>4:使用selenium爬取淘宝商品</h2></li>
-<li></li>
-</ul>
-<h1 id="6-验证码的识别"><a href="#6-验证码的识别" class="headerlink" title="6:验证码的识别"></a>6:验证码的识别</h1><h2 id="1-图像验证码的识别"><a href="#1-图像验证码的识别" class="headerlink" title="1:图像验证码的识别"></a>1:图像验证码的识别</h2><h2 id="2-极验滑动验证码的识别"><a href="#2-极验滑动验证码的识别" class="headerlink" title="2:极验滑动验证码的识别"></a>2:极验滑动验证码的识别</h2><h2 id="3-点触验证码的识别"><a href="#3-点触验证码的识别" class="headerlink" title="3:点触验证码的识别"></a>3:点触验证码的识别</h2><h2 id="4-微博宫格验证码的识别"><a href="#4-微博宫格验证码的识别" class="headerlink" title="4:微博宫格验证码的识别"></a>4:微博宫格验证码的识别</h2><h1 id="7-代理的使用"><a href="#7-代理的使用" class="headerlink" title="7:代理的使用"></a>7:代理的使用</h1><h2 id="1-代理的设置"><a href="#1-代理的设置" class="headerlink" title="1:代理的设置"></a>1:代理的设置</h2><h2 id="2-代理池的维护"><a href="#2-代理池的维护" class="headerlink" title="2:代理池的维护"></a>2:代理池的维护</h2><h2 id="3-付费代理的使用"><a href="#3-付费代理的使用" class="headerlink" title="3:付费代理的使用"></a>3:付费代理的使用</h2><h2 id="4-ADSL拨号代理"><a href="#4-ADSL拨号代理" class="headerlink" title="4:ADSL拨号代理"></a>4:ADSL拨号代理</h2><h2 id="5-使用代理爬取微信公众号文章"><a href="#5-使用代理爬取微信公众号文章" class="headerlink" title="5:使用代理爬取微信公众号文章"></a>5:使用代理爬取微信公众号文章</h2><h1 id="8-模拟登录"><a href="#8-模拟登录" class="headerlink" title="8:模拟登录"></a>8:模拟登录</h1><h2 id="1-模拟登录并爬取GitHub"><a href="#1-模拟登录并爬取GitHub" class="headerlink" title="1:模拟登录并爬取GitHub"></a>1:模拟登录并爬取GitHub</h2><h2 id="2-cookies池的搭建"><a href="#2-cookies池的搭建" class="headerlink" title="2:cookies池的搭建"></a>2:cookies池的搭建</h2><h1 id="9-APP爬取"><a href="#9-APP爬取" class="headerlink" title="9:APP爬取"></a>9:APP爬取</h1><h2 id="1-Charles的使用"><a href="#1-Charles的使用" class="headerlink" title="1:Charles的使用"></a>1:Charles的使用</h2><h2 id="2-mitmproxy的使用"><a href="#2-mitmproxy的使用" class="headerlink" title="2:mitmproxy的使用"></a>2:mitmproxy的使用</h2><h2 id="3-mitmproxy爬取”得到”APP电子书信息"><a href="#3-mitmproxy爬取”得到”APP电子书信息" class="headerlink" title="3:mitmproxy爬取”得到”APP电子书信息"></a>3:mitmproxy爬取”得到”APP电子书信息</h2><h2 id="4-Appium的基本使用"><a href="#4-Appium的基本使用" class="headerlink" title="4:Appium的基本使用"></a>4:Appium的基本使用</h2><h2 id="5-Appium爬取微信朋友圈"><a href="#5-Appium爬取微信朋友圈" class="headerlink" title="5:Appium爬取微信朋友圈"></a>5:Appium爬取微信朋友圈</h2><h2 id="6-Appium-mitmdump爬取京东商品"><a href="#6-Appium-mitmdump爬取京东商品" class="headerlink" title="6:Appium+mitmdump爬取京东商品"></a>6:Appium+mitmdump爬取京东商品</h2><h1 id="10-pyspider框架的使用"><a href="#10-pyspider框架的使用" class="headerlink" title="10:pyspider框架的使用"></a>10:pyspider框架的使用</h1><h2 id="1-pyspider框架介绍"><a href="#1-pyspider框架介绍" class="headerlink" title="1:pyspider框架介绍"></a>1:pyspider框架介绍</h2><h2 id="2-pyspider的基本使用"><a href="#2-pyspider的基本使用" class="headerlink" title="2:pyspider的基本使用"></a>2:pyspider的基本使用</h2><h2 id="3-pyspider用法详解"><a href="#3-pyspider用法详解" class="headerlink" title="3:pyspider用法详解"></a>3:pyspider用法详解</h2><h1 id="11-Scrapy框架的使用"><a href="#11-Scrapy框架的使用" class="headerlink" title="11:Scrapy框架的使用"></a>11:Scrapy框架的使用</h1><h2 id="1-Scrapy框架介绍"><a href="#1-Scrapy框架介绍" class="headerlink" title="1:Scrapy框架介绍"></a>1:Scrapy框架介绍</h2><h2 id="2-Scrapy入门"><a href="#2-Scrapy入门" class="headerlink" title="2:Scrapy入门"></a>2:Scrapy入门</h2><ul>
-<li>创建项目(scrapy startproject 项目名)</li>
-<li></li>
-</ul>
-<h2 id="3-Selector的用法"><a href="#3-Selector的用法" class="headerlink" title="3:Selector的用法"></a>3:Selector的用法</h2><h2 id="4-Spider的用法"><a href="#4-Spider的用法" class="headerlink" title="4:Spider的用法"></a>4:Spider的用法</h2><h2 id="5-Dowmloader-Middleware的用法"><a href="#5-Dowmloader-Middleware的用法" class="headerlink" title="5:Dowmloader Middleware的用法"></a>5:Dowmloader Middleware的用法</h2><h2 id="6-Spider-Middleware-的用法"><a href="#6-Spider-Middleware-的用法" class="headerlink" title="6:Spider Middleware 的用法"></a>6:Spider Middleware 的用法</h2><h2 id="7-Item-Pipeline-的用法"><a href="#7-Item-Pipeline-的用法" class="headerlink" title="7:Item Pipeline 的用法"></a>7:Item Pipeline 的用法</h2><h2 id="8-Scrapy对接Selenium"><a href="#8-Scrapy对接Selenium" class="headerlink" title="8:Scrapy对接Selenium"></a>8:Scrapy对接Selenium</h2><h2 id="9-Scrapy对接Splash"><a href="#9-Scrapy对接Splash" class="headerlink" title="9:Scrapy对接Splash"></a>9:Scrapy对接Splash</h2><h2 id="10-Scrapy通用爬虫"><a href="#10-Scrapy通用爬虫" class="headerlink" title="10:Scrapy通用爬虫"></a>10:Scrapy通用爬虫</h2><h2 id="11-Scrapyrt的使用"><a href="#11-Scrapyrt的使用" class="headerlink" title="11:Scrapyrt的使用"></a>11:Scrapyrt的使用</h2><h2 id="12-Scrapy对接Docker"><a href="#12-Scrapy对接Docker" class="headerlink" title="12:Scrapy对接Docker"></a>12:Scrapy对接Docker</h2><h2 id="13-Scrapy爬取新浪微博"><a href="#13-Scrapy爬取新浪微博" class="headerlink" title="13:Scrapy爬取新浪微博"></a>13:Scrapy爬取新浪微博</h2><h1 id="12-分布式爬虫"><a href="#12-分布式爬虫" class="headerlink" title="12:分布式爬虫"></a>12:分布式爬虫</h1><h1 id="13-分布式爬虫的部署"><a href="#13-分布式爬虫的部署" class="headerlink" title="13:分布式爬虫的部署"></a>13:分布式爬虫的部署</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/01/Python%E7%88%AC%E8%99%AB/" data-id="cklqk94uh0001uctpc3kz280t" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Python的数据分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="article-date">
-  <time class="dt-published" datetime="2021-03-01T12:30:31.055Z" itemprop="datePublished">2021-03-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>[TOC]</p>
-<p>title: Python数据分析与人工智能</p>
-<h1 id="1-开发环境的安装"><a href="#1-开发环境的安装" class="headerlink" title="1:开发环境的安装"></a>1:开发环境的安装</h1><ul>
-<li>1）自己搭建开发环境<pre><code>    安装了3.6.8python（自定义安装目录）
-      配置环境变量
-      数据分析环境：numpy、pandas、jupyter、scipy、sklearn、matplotlib、tensorflow、seaborn、pyecharts……
-      jupyter，数据分析开发工具，浏览器中编写代码，启动jupyter：jupyter notebook
-      命令行一直运行，后端，浏览器，前端
-      命令行中写代码，映射到浏览器，写代码灵活
-</code></pre>
-</li>
-<li>1.2</li>
-<li>2）使用anaconda集成开发环境<pre><code>    一路下一步（修改安装目录）
-      配置环境变量
-      启动jupyter：jupyter notebook
-</code></pre>
-</li>
-</ul>
-<h1 id="2-数据分析介绍竞赛平台"><a href="#2-数据分析介绍竞赛平台" class="headerlink" title="2:数据分析介绍竞赛平台"></a>2:<a target="_blank" rel="noopener" href="https://tianchi.aliyun.com/">数据分析介绍竞赛平台</a></h1><ul>
-<li><h2 id="2-1-kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台"><a href="#2-1-kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台" class="headerlink" title="2.1:kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台"></a>2.1:kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台</h2><pre><code>X**2 + Y**2 = Z**2 正整数解
-
-X**3 + Y**3 = Z**3 正整数解
-
-X**n + Y**n = Z**n n &gt;=3 正整数解
-
-X，Y，Z正整数解 1,2,3,4,5……
-
-一个也没有
-
-费马大定理
-</code></pre>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.kaggle.com/">kaggle</a> 历史很悠久，上面有很多开源的项目，并且附有代码</p>
-</li>
-</ul>
-<h1 id="3-numpy的使用-numpy中文文档"><a href="#3-numpy的使用-numpy中文文档" class="headerlink" title="3:numpy的使用(numpy中文文档)"></a>3:numpy的使用(<a target="_blank" rel="noopener" href="https://www.numpy.org.cn/">numpy中文文档</a>)</h1><ul>
-<li><p>推荐一个查找问题的网站<a target="_blank" rel="noopener" href="https://stackoverflow.com/">stackover</a></p>
-</li>
-<li><p>3.1:使用np.array()创建矩阵参数为列表</p>
-</li>
-<li><pre><code class="python">#%%
-
-import numpy as np
-# 执行的快捷键Ctrl + Enter
-# 做一个二维列表
-a = [[1,2,3,4], [5,6,7,8]]
-nd1 = np.array([1,2,3])
-nd1
-
-#%%
-nd2 = np.array(a)
-# nd2.sum()  # 计算和
-%timeit nd2.sum()   # 计算nd2.sum()的执行时间
-#%%
-# nd2.var()  # 计算方差
-%timeit nd2.sum()
-#%%
-def sum1(x):
-    ret = 0
-    for i in x:
-        ret += i
-    return ret
-%timeit sum1(nd2)   # 就算执行时间
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 3.2:使用np.routines函数创建</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  np.ones(shape&#x3D;(5,5),dtype&#x3D;np.int8)</span><br><span class="line">  #%%</span><br><span class="line">  # 2:np.zeros(shape,dtype&#x3D;float,order&#x3D;&#39;C&#39;)</span><br><span class="line">  np.zeros(shape&#x3D;(2,3,4),dtype&#x3D;np.float16)</span><br><span class="line">  #%%</span><br><span class="line">  # 3:np.full(shape,fill_value,dtype&#x3D;Npne,order&#x3D;&#39;C&#39;)</span><br><span class="line">  np.full(shape&#x3D;(3,5),fill_value&#x3D;3.14)</span><br><span class="line">  #%%</span><br><span class="line">  # 4:np.eye(N,M&#x3D;None,k&#x3D;0,dtype&#x3D;float)</span><br><span class="line">  np.eye(N&#x3D;5)    # 单位矩阵</span><br><span class="line">  #%%</span><br><span class="line">  # 5:np.linspace(start,stop,num,endpoint&#x3D;True,retstep&#x3D;False,dtype&#x3D;None)</span><br><span class="line">  np.linspace(0,100,num&#x3D;101)   # 等差数列</span><br><span class="line">  #%%</span><br><span class="line">  # 6:np.arange(start,stop,step,dype)</span><br><span class="line">  np.arange(0,100,3)</span><br><span class="line">  #%%</span><br><span class="line">  # 7:</span><br><span class="line">  np.random.randint(0,100,size&#x3D;(5,5))</span><br><span class="line">  #%%</span><br><span class="line">  # 8:标准的正态分布</span><br><span class="line">  # normal 正态</span><br><span class="line">  # 平均值为0,方差为1</span><br><span class="line">  np.random.randn(4,5)</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  # 9:</span><br><span class="line">  nd &#x3D; np.random.normal(loc&#x3D;175,scale&#x3D;10,size&#x3D;10000).round(2)  # loc为平均数,scale为方差</span><br><span class="line">  nd.mean()   # 结果保留了俩位小数</span><br><span class="line">  #%%</span><br><span class="line">  # 10:</span><br><span class="line">  np.random.random(100)   # 生成0到1的随机数左闭右开</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>ndarray的属性</p>
-</li>
-<li><pre><code class="python"># ndarray的属性
-# ndim:维度 shape:形状 size:总长度 dtype:元素类型
-nd
-nd.size
-nd.shape
-nd.ndim
-nd.dtype
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- ndarray的基本操作</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 1:索引</span><br><span class="line">  nd3 &#x3D; np.random.randint(0,150,size&#x3D;(4,5))</span><br><span class="line">  nd3</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  </span><br><span class="line">  nd3[1,1]</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  </span><br><span class="line">  # 切片操作</span><br><span class="line">  nd3[0:3]</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>进行对图片操作</p>
-</li>
-<li><pre><code class="python">from PIL import Image
-image = Image.open(&#39;test.jpg&#39;)   # 打印图片
-image
-
-#%%
-
-image_data = np.array(image)
-# 图片的数据
-# 彩色图片是三维的:长度 宽度 像素
-# 三原色 红绿蓝
-image_data
-
-#%%
-
-# 行,列, 像素
-image_data.shape
-image_data
-#%%
-
-image2 = image_data[:,:,::-1]
-image2
-#%%
-image
-#%%
-
-Image.fromarray(image2)
-#%%
-Image.fromarray(image_data[::5,::5])   # 对图片进行缩小处理
-
-#%%
-# 红绿蓝 0 1 2
-# 绿红蓝 1 0 2
-Image.fromarray(image_data[:,:,[1,0,2]])
-#%%
-image_data
-#%%
-image_data[:,:,0]
-#%%
-# 变成二维数据
-Image.fromarray(image_data[:,:,0])   # 没有颜色
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 使用natplotlib显示图片</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 用matplotlib显示图片</span><br><span class="line">  import matplotlib.pyplot as plt</span><br><span class="line">  %matplotlib inline</span><br><span class="line">  plt.imshow(image_data)    # 显示图片</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>转置操作</p>
-</li>
-<li><pre><code class="python"># 高度0,宽度1,像素2
-# 转置
-image_data1 = np.transpose(image_data,axes=(1,0,2))   # 高度与宽度转置
-plt.imshow(image_data1)
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 级联操作</span><br><span class="line"></span><br><span class="line">- 1、numpy 级联 集成，操作sql</span><br><span class="line">  	np.concatenate()</span><br><span class="line">  	np.vstack() 竖直方向，axis &#x3D; 0</span><br><span class="line">  	np.hstack() 水平方向，axis &#x3D; 1</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 级联</span><br><span class="line">  # np.concatenate()参数是列表:一定加中括号或者小括号</span><br><span class="line">  # 维度必须相同 形状相符</span><br><span class="line">  # 级联方向默认是这个shape这个tuple的第一个值所代表的维度方向</span><br><span class="line">  # 可通过axis参数改变级联方向</span><br><span class="line">  nd2 &#x3D; nd2.reshape(2,9)</span><br><span class="line">  nd2</span><br><span class="line">  # array([[ 1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">  #        [10, 11, 12,  7,  8,  9, 10, 11, 12]])</span><br><span class="line">  #%%</span><br><span class="line">  np.concatenate([nd2,nd2])</span><br><span class="line">  # array([[ 1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">  #        [10, 11, 12,  7,  8,  9, 10, 11, 12],</span><br><span class="line">  #        [ 1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">  #        [10, 11, 12,  7,  8,  9, 10, 11, 12]])</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  image_data2 &#x3D; image_data[:,:310]</span><br><span class="line">  plt.imshow(image_data2)    # 截取图片</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  image_data3 &#x3D; image_data[:,310:,::-1]</span><br><span class="line">  plt.imshow(image_data3)</span><br><span class="line">  #%%</span><br><span class="line">  # 合拼俩张图片</span><br><span class="line">  # 高度0 宽度1 像素2</span><br><span class="line">  # axis决定在哪个方向上拼接</span><br><span class="line">  image_data4 &#x3D; np.concatenate([image_data2,image_data3],axis&#x3D;1)   # 在宽度上拼接</span><br><span class="line">  plt.imshow(image_data4)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>切分</p>
-</li>
-<li><p>2、numpy切分操作</p>
-<pre><code>split() 参数二indices_or_sections:int 1-D array
-vsplit() 竖直方向，axis = 0
-hsplit() 水平方向，axis = 1
-</code></pre>
-</li>
-<li><pre><code class="python"># 切分(是级联的逆操作)
-# np.split()
-# np.vsplit()
-# np.hsplit()
-nd4.shape
-#%%
-np.split(nd4,indices_or_sections=2)     # 参数得被行数整除
-
-#%%
-np.split(nd4,indices_or_sections=[1,3])   # 表示在行的方向进行切分
-
-#%%
-np.vsplit(nd6,indices_or_sections=2)    # 在水平方向进行切分  axis=0
-
-
-#%%
-np.hsplit(nd6,indices_or_sections=4)    # 在垂直方向进行切分   axis=1
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 聚合操作</span><br><span class="line"></span><br><span class="line">- 3、numpy提供一些列函数</span><br><span class="line">  	聚合函数，合并到一块，根据某一个方向进行合并，axis</span><br><span class="line">  	percentile 求解ndarray百分比 中位数，百分之50%</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 聚合操作</span><br><span class="line">  nd4</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4.sum()    # 计算和</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4.prod()    # 所有数的乘积</span><br><span class="line">  #%%</span><br><span class="line">  nd4.mean()   # 计算平均值</span><br><span class="line">  #%%</span><br><span class="line">  nd4.argmax(axis&#x3D;1)  # 找最大值的索引(按行寻找每行最大值)</span><br><span class="line">  nd4.argmin(axis&#x3D;-1)  # 找最小值的索引(按行寻找每行最小值)</span><br><span class="line">  #%%</span><br><span class="line">  np.argwhere((nd4&gt;79)&amp;(nd4&lt;100))    # 返回值大于79的索引</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4</span><br><span class="line">  #%%</span><br><span class="line">  nd7&#x3D;nd4.ravel()    # 将数据变为一维的</span><br><span class="line">  np.median(nd7)   # 计算中位数</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  np.percentile(nd4,q&#x3D;25)    # 相当于分位数</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4</span><br><span class="line">  #%%</span><br><span class="line">  nd4.any()    # 只要全部为0才是Flase</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4[0,0]&#x3D;0</span><br><span class="line">  #%%</span><br><span class="line">  nd4.all()   # 判断是否全部非0</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" data-id="cklqk94u60000uctpgy4e7dr2" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-程序员的生活" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/01/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E7%94%9F%E6%B4%BB/" class="article-date">
-  <time class="dt-published" datetime="2021-03-01T12:25:35.600Z" itemprop="datePublished">2021-03-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="程序员的生活"><a href="#程序员的生活" class="headerlink" title="程序员的生活"></a>程序员的生活</h1><h1 id=""><a href="#" class="headerlink" title=""></a></h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/01/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E7%94%9F%E6%B4%BB/" data-id="cklqk55xg0000yotp1yr26a2l" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/01/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-03-01T07:40:05.755Z" itemprop="datePublished">2021-03-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <li>
+       
+      <ul class="breadcrumbs" id="post-source">
+        <li><a href="#"><i class="fa fa-file-text"></i></a></li>
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/03/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>欢迎来到小小胡的个人博客,在这里会和大家分析代码世界的点点滴滴……</p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/01/hello-world/" data-id="cklqclak10000dktphn2jbjmq" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+           
         
-          <li>
-            <a href="/2021/03/01/Python%E7%88%AC%E8%99%AB/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/01/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E7%94%9F%E6%B4%BB/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/01/hello-world/">Hello World</a>
-          </li>
-        
+        <li id="post-title"><a href="/2021/03/01/Python爬虫/" title="no-title">no-title</a></li> 
       </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
+       
+      <div class="post-table">
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              <span class="table-title">File: no-title</span>
+              <span>2021-03-01</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="table-linenum" id="table-linenum">content</td>
+            <td></td>
+          </tr>
+        </table>
       </div>
-      <footer id="footer">
+    </li>
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+     
     
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
+    <li>
+       
+      <ul class="breadcrumbs" id="post-source">
+        <li><a href="#"><i class="fa fa-file-text"></i></a></li>
+        
+        
+           
+        
+        <li id="post-title"><a href="/2021/03/01/Python的数据分析/" title="no-title">no-title</a></li> 
+      </ul>
+       
+      <div class="post-table">
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              <span class="table-title">File: no-title</span>
+              <span>2021-03-01</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="table-linenum" id="table-linenum">content</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </li>
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+     
+    
+    <li>
+       
+      <ul class="breadcrumbs" id="post-source">
+        <li><a href="#"><i class="fa fa-file-text"></i></a></li>
+        
+        
+           
+        
+        <li id="post-title"><a href="/2021/03/01/程序员的生活/" title="no-title">no-title</a></li> 
+      </ul>
+       
+      <div class="post-table">
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              <span class="table-title">File: no-title</span>
+              <span>2021-03-01</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="table-linenum" id="table-linenum">content</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </li>
+  
+     
+    
+    <li>
+       
+      <ul class="breadcrumbs" id="post-source">
+        <li><a href="#"><i class="fa fa-file-text"></i></a></li>
+        
+        
+        <li id="post-title"><a href="/2021/03/01/hello-world/" title="Hello World">Hello World</a></li> 
+      </ul>
+       
+      <div class="post-table">
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              <span class="table-title">File: Hello World</span>
+              <span>2021-03-01</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="table-linenum" id="table-linenum">content</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </li>
+  
+</ul>
+   
+<div class="paginator">
+  <span class="page-number current">1</span>
+</div>
+</div>
 
+<div class="desktop-category">
+  <ul class="breadcrumbs">
+    <li><a href="#"><i class="fa fa-code"></i></a></li>
+    <li><a href="#">category</a></li>
+    <li><a href="#">ls -al</a></li>
+  </ul>
+   
 
+</div>
 
+<div class="desktop-tag">
+  <ul class="breadcrumbs">
+    <li><a href="#"><i class="fa fa-code"></i></a></li>
+    <li><a href="#">tag</a></li>
+    <li><a href="#">ls</a></li>
+  </ul>
+     
 
-<script src="/js/script.js"></script>
-
-
-
-
-
+</div>
   </div>
+  
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/jquery/jquery-ui.min.js"></script>
+
+
+<script src="/lib/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script src="/js/milk.js"></script>
+
 </body>
 </html>

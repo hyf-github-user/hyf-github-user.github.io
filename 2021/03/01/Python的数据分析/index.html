@@ -1,91 +1,114 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title> [ Soymilk ]</title>
   
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="[TOC] title: Python数据分析与人工智能 1:开发环境的安装 1）自己搭建开发环境    安装了3.6.8python（自定义安装目录）       配置环境变量       数据分析环境：numpy、pandas、jupyter、scipy、sklearn、matplotlib、tensorflow、seaborn、pyecharts……       jupyter，数据分析开发">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="[TOC] title: Python数据分析与人工智能 1:开发环境的安装 1）自己搭建开发环境    安装了3.6.8python（自定义安装目录）       配置环境变量       数据分析环境：numpy、pandas、jupyter、scipy、sklearn、matplotlib、tensorflow、seaborn、pyecharts……       jupyter，数据分析开发">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-01T12:30:31.055Z">
-<meta property="article:modified_time" content="2021-03-01T12:44:07.405Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/lib/highlight/monokai-sublime.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
 
-  
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<link rel="stylesheet" href="/css/milk.css">
+
 <meta name="generator" content="Hexo 5.4.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+  <div class="milk-header">
+     
 
-      <div class="outer">
-        <section id="main"><article id="post-Python的数据分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="article-date">
-  <time class="dt-published" datetime="2021-03-01T12:30:31.055Z" itemprop="datePublished">2021-03-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
+  <nav class="header-nav">
+     
+    <ul class="nav-menu">
       
-        <p>[TOC]</p>
+        <li id="Home">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <a href="/ ">Home</a>
+        </li>
+      
+        <li id="Archives">
+          <i class="fa fa-archive" aria-hidden="true"></i>
+          <a href="/archives ">Archives</a>
+        </li>
+      
+        <li id="About">
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+          <a href="/about ">About</a>
+        </li>
+      
+    </ul>
+    
+    
+      <span class="nav-date">
+        <i class="fa fa-calendar" aria-hidden="true"></i>
+        <span id="date"></span>
+      </span>
+    
+    
+    
+      <span class="nav-system" id="nav-system"></span>
+    
+    
+    <span class="nav-access">
+      <i class="fa fa-universal-access" id="nav-access"></i>
+      <i class="fa fa-angle-down"></i>
+      <div class="dropdown-content" id="dropdown-content">
+        <ul class="social">
+          
+            <li>
+              <a target="_blank" rel="noopener" href="https://github.com/MRsoymilk">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a href="mailto:codermrsoymilk@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        </ul>
+        <ul>
+          <li><span>Power by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></span></li>
+        </ul>
+      </div>
+    </span>
+  </nav>
+ 
+  </div>
+  <div class="milk-body">
+    
+<div class="draggable-toc">
+  <div class="toc-title"></div>
+  <p>process: <span>0</span></p>
+  <div class="progress-container">
+    <div class="progress-bar" id="bar"></div>
+  </div>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%AE%89%E8%A3%85"><span class="toc-text">1:开发环境的安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%BB%8B%E7%BB%8D%E7%AB%9E%E8%B5%9B%E5%B9%B3%E5%8F%B0"><span class="toc-text">2:数据分析介绍竞赛平台</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-kaggle%E3%80%81%E5%A4%A9%E6%B1%A0%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%AB%9E%E8%B5%9B%EF%BC%88%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%EF%BC%89%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E5%B9%B3%E5%8F%B0"><span class="toc-text">2.1:kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-numpy%E7%9A%84%E4%BD%BF%E7%94%A8-numpy%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3"><span class="toc-text">3:numpy的使用(numpy中文文档)</span></a></li></ol>
+</div>
+
+<div class="post-content" id="post-content">
+  <div id="top"></div>
+  <div class="post">
+    
+    <div class="content-categories">
+      
+      <i class="fa fa-location-arrow"></i>
+      <ul>
+        <li>categories</li>
+        
+      </ul>
+    
+    </div>
+    <hr>
+    
+    <p>[TOC]</p>
 <p>title: Python数据分析与人工智能</p>
 <h1 id="1-开发环境的安装"><a href="#1-开发环境的安装" class="headerlink" title="1:开发环境的安装"></a>1:开发环境的安装</h1><ul>
 <li>1）自己搭建开发环境<pre><code>    安装了3.6.8python（自定义安装目录）
@@ -248,130 +271,120 @@ np.hsplit(nd6,indices_or_sections=4)    # 在垂直方向进行切分   axis=1
 <li></li>
 </ul>
 
+    
+    <hr>
+    <div class="content-tags">
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" data-id="cklqk94u60000uctpgy4e7dr2" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2021/03/01/Python%E7%88%AC%E8%99%AB/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2021/03/01/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E7%94%9F%E6%B4%BB/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title"></div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
+      <i class="fa fa-tags"></i>
       <ul>
         
-          <li>
-            <a href="/2021/03/01/Python%E7%88%AC%E8%99%AB/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/01/Python%E7%9A%84%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/01/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E7%94%9F%E6%B4%BB/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/01/hello-world/">Hello World</a>
-          </li>
-        
       </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
+    </div>
+    
+     
+<div class="comment-tabs" id="comment-tabs">
+  comment:
+  <ul>
+    
+      <li><a href="#Valine">Valine</a></li>
+    
+    
+      <li><a href="#LiveRe">LiveRe</a></li>
+    
+    
+      <li><a href="#ChangYan">ChangYan</a></li>
+    
+  </ul>
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
+  
+    <div id="ChangYan">
+      <!--PC和WAP自适应版-->
+      <div id="SOHUCS" ></div> 
+      <script type="text/javascript"> 
+      (function(){ 
+      var appid = 'cyuGH4lBk'; 
+      var conf = 'ae32d85e4ca99348209aedfd3ae01478'; 
+      var width = window.innerWidth || document.documentElement.clientWidth; 
+      if (width < 960) {
+      var head = document.getElementsByTagName('head')[0]||document.head||document.documentElement;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.charset = 'utf-8';
+      script.id = 'changyan_mobile_js';
+      script.src = 'https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf;
+      head.appendChild(script);
+      } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); 
+      </script>
+    </div>
+   
+  
+  
+    <div id="LiveRe">
+      
+        <!-- LiveRe City install code -->
+        <div id="lv-container" data-id="city" data-uid="MTAyMC80NjA4MS8yMjU5Mg==">
+          <script type="text/javascript">
+            (function(d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+              if (typeof LivereTower === 'function') { return; }
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+              e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+          </script>
+          <noscript>Please activate JavaScript for write a comment in LiveRe</noscript>
+          </div>
+          <!-- completed City install code -->
+        
+    </div>
+  
+  
+  
+    <div id="Valine">
+      <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+      <div id="vcomments"></div>
+      <script>
+        new Valine({
+          el: '#vcomments',
+          appId: '5bHFwYPW2iHWCiV7WmNRSenk-gzGzoHsz',
+          appKey: '2q4UgVDTmeJf9Phe8VbnNKyC',
+          avatar: 'monsterid',
+          enableQQ: true
+        })
+      </script>
+    </div>
+   
+</div>
 
   </div>
+</div>
+ 
+<div>
+  <button id="scroll2top">back to top</button>
+</div>
+  </div>
+  
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/jquery/jquery-ui.min.js"></script>
+
+
+<script src="/lib/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script src="/js/milk.js"></script>
+
 </body>
 </html>
