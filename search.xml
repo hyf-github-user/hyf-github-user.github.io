@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Python</title>
+    <url>/2021/03/01/Python/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/03/01/hello-world/</url>
     <content><![CDATA[<p>欢迎来到小小胡的个人博客,在这里会和大家分析代码世界的点点滴滴……</p>
@@ -17,10 +22,5 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Python</title>
-    <url>/2021/03/01/Python/</url>
-    <content><![CDATA[]]></content>
   </entry>
 </search>
