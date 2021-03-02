@@ -5,13 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title> - Hexo</title>
+    <title>Python的爬虫 - Hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="世界 你好!到货时间格式的规划开始的规划建设的规划….
-"> 
+    <meta name="description" content="Python的数据分析与人工智能1:开发环境的安装
+1）自己搭建开发环境    安装了3.6.8python（自定义安装目录）
+      配置环境变量
+      数据分析环境：numpy、pan,"> 
     <meta name="author" content="John Doe"> 
     <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -41,7 +43,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
     <div title="播放/暂停" class="iconfont icon-play"></div>
-    <h3 class="subtitle"></h3>
+    <h3 class="subtitle">Python的爬虫</h3>
     <div class="social">
         <div>
             <div class="share">
@@ -56,14 +58,175 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title"></h1>
+        <h1 class="title">Python的爬虫</h1>
         <div class="stuff">
             <span>三月 02, 2021</span>
             
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E9%97%B2%E5%86%99/" rel="tag">闲写</a></li></ul>
+
 
         </div>
         <div class="content markdown">
-            <h1 id="世界-你好"><a href="#世界-你好" class="headerlink" title="世界 你好!"></a>世界 你好!</h1><p>到货时间格式的规划开始的规划建设的规划….</p>
+            <h1 id="Python的数据分析与人工智能"><a href="#Python的数据分析与人工智能" class="headerlink" title="Python的数据分析与人工智能"></a>Python的数据分析与人工智能</h1><h1 id="1-开发环境的安装"><a href="#1-开发环境的安装" class="headerlink" title="1:开发环境的安装"></a>1:开发环境的安装</h1><ul>
+<li>1）自己搭建开发环境<pre><code>    安装了3.6.8python（自定义安装目录）
+      配置环境变量
+      数据分析环境：numpy、pandas、jupyter、scipy、sklearn、matplotlib、tensorflow、seaborn、pyecharts……
+      jupyter，数据分析开发工具，浏览器中编写代码，启动jupyter：jupyter notebook
+      命令行一直运行，后端，浏览器，前端
+      命令行中写代码，映射到浏览器，写代码灵活
+</code></pre>
+</li>
+<li>1.2</li>
+<li>2）使用anaconda集成开发环境<pre><code>    一路下一步（修改安装目录）
+      配置环境变量
+      启动jupyter：jupyter notebook
+</code></pre>
+</li>
+</ul>
+<h1 id="2-数据分析介绍竞赛平台"><a href="#2-数据分析介绍竞赛平台" class="headerlink" title="2:数据分析介绍竞赛平台"></a>2:<a target="_blank" rel="noopener" href="https://tianchi.aliyun.com/">数据分析介绍竞赛平台</a></h1><ul>
+<li><h2 id="2-1-kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台"><a href="#2-1-kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台" class="headerlink" title="2.1:kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台"></a>2.1:kaggle、天池大数据竞赛（阿里巴巴）数据分析的平台</h2><pre><code>X**2 + Y**2 = Z**2 正整数解
+
+X**3 + Y**3 = Z**3 正整数解
+
+X**n + Y**n = Z**n n &gt;=3 正整数解
+
+X，Y，Z正整数解 1,2,3,4,5……
+
+一个也没有
+
+费马大定理
+</code></pre>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.kaggle.com/">kaggle</a> 历史很悠久，上面有很多开源的项目，并且附有代码</p>
+</li>
+</ul>
+<h1 id="3-numpy的使用-numpy中文文档"><a href="#3-numpy的使用-numpy中文文档" class="headerlink" title="3:numpy的使用(numpy中文文档)"></a>3:numpy的使用(<a target="_blank" rel="noopener" href="https://www.numpy.org.cn/">numpy中文文档</a>)</h1><ul>
+<li><p>推荐一个查找问题的网站<a target="_blank" rel="noopener" href="https://stackoverflow.com/">stackover</a></p>
+</li>
+<li><p>3.1:使用np.array()创建矩阵参数为列表</p>
+</li>
+<li><pre><code class="python">#%%
+
+import numpy as np
+# 执行的快捷键Ctrl + Enter
+# 做一个二维列表
+a = [[1,2,3,4], [5,6,7,8]]
+nd1 = np.array([1,2,3])
+nd1
+
+#%%
+nd2 = np.array(a)
+# nd2.sum()  # 计算和
+%timeit nd2.sum()   # 计算nd2.sum()的执行时间
+#%%
+# nd2.var()  # 计算方差
+%timeit nd2.sum()
+#%%
+def sum1(x):
+    ret = 0
+    for i in x:
+        ret += i
+    return ret
+%timeit sum1(nd2)   # 就算执行时间
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 3.2:使用np.routines函数创建</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  np.ones(shape&#x3D;(5,5),dtype&#x3D;np.int8)</span><br><span class="line">  #%%</span><br><span class="line">  # 2:np.zeros(shape,dtype&#x3D;float,order&#x3D;&#39;C&#39;)</span><br><span class="line">  np.zeros(shape&#x3D;(2,3,4),dtype&#x3D;np.float16)</span><br><span class="line">  #%%</span><br><span class="line">  # 3:np.full(shape,fill_value,dtype&#x3D;Npne,order&#x3D;&#39;C&#39;)</span><br><span class="line">  np.full(shape&#x3D;(3,5),fill_value&#x3D;3.14)</span><br><span class="line">  #%%</span><br><span class="line">  # 4:np.eye(N,M&#x3D;None,k&#x3D;0,dtype&#x3D;float)</span><br><span class="line">  np.eye(N&#x3D;5)    # 单位矩阵</span><br><span class="line">  #%%</span><br><span class="line">  # 5:np.linspace(start,stop,num,endpoint&#x3D;True,retstep&#x3D;False,dtype&#x3D;None)</span><br><span class="line">  np.linspace(0,100,num&#x3D;101)   # 等差数列</span><br><span class="line">  #%%</span><br><span class="line">  # 6:np.arange(start,stop,step,dype)</span><br><span class="line">  np.arange(0,100,3)</span><br><span class="line">  #%%</span><br><span class="line">  # 7:</span><br><span class="line">  np.random.randint(0,100,size&#x3D;(5,5))</span><br><span class="line">  #%%</span><br><span class="line">  # 8:标准的正态分布</span><br><span class="line">  # normal 正态</span><br><span class="line">  # 平均值为0,方差为1</span><br><span class="line">  np.random.randn(4,5)</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  # 9:</span><br><span class="line">  nd &#x3D; np.random.normal(loc&#x3D;175,scale&#x3D;10,size&#x3D;10000).round(2)  # loc为平均数,scale为方差</span><br><span class="line">  nd.mean()   # 结果保留了俩位小数</span><br><span class="line">  #%%</span><br><span class="line">  # 10:</span><br><span class="line">  np.random.random(100)   # 生成0到1的随机数左闭右开</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>ndarray的属性</p>
+</li>
+<li><pre><code class="python"># ndarray的属性
+# ndim:维度 shape:形状 size:总长度 dtype:元素类型
+nd
+nd.size
+nd.shape
+nd.ndim
+nd.dtype
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- ndarray的基本操作</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 1:索引</span><br><span class="line">  nd3 &#x3D; np.random.randint(0,150,size&#x3D;(4,5))</span><br><span class="line">  nd3</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  </span><br><span class="line">  nd3[1,1]</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  </span><br><span class="line">  # 切片操作</span><br><span class="line">  nd3[0:3]</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>进行对图片操作</p>
+</li>
+<li><pre><code class="python">from PIL import Image
+image = Image.open(&#39;test.jpg&#39;)   # 打印图片
+image
+
+#%%
+
+image_data = np.array(image)
+# 图片的数据
+# 彩色图片是三维的:长度 宽度 像素
+# 三原色 红绿蓝
+image_data
+
+#%%
+
+# 行,列, 像素
+image_data.shape
+image_data
+#%%
+
+image2 = image_data[:,:,::-1]
+image2
+#%%
+image
+#%%
+
+Image.fromarray(image2)
+#%%
+Image.fromarray(image_data[::5,::5])   # 对图片进行缩小处理
+
+#%%
+# 红绿蓝 0 1 2
+# 绿红蓝 1 0 2
+Image.fromarray(image_data[:,:,[1,0,2]])
+#%%
+image_data
+#%%
+image_data[:,:,0]
+#%%
+# 变成二维数据
+Image.fromarray(image_data[:,:,0])   # 没有颜色
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 使用natplotlib显示图片</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 用matplotlib显示图片</span><br><span class="line">  import matplotlib.pyplot as plt</span><br><span class="line">  %matplotlib inline</span><br><span class="line">  plt.imshow(image_data)    # 显示图片</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>转置操作</p>
+</li>
+<li><pre><code class="python"># 高度0,宽度1,像素2
+# 转置
+image_data1 = np.transpose(image_data,axes=(1,0,2))   # 高度与宽度转置
+plt.imshow(image_data1)
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 级联操作</span><br><span class="line"></span><br><span class="line">- 1、numpy 级联 集成，操作sql</span><br><span class="line">  	np.concatenate()</span><br><span class="line">  	np.vstack() 竖直方向，axis &#x3D; 0</span><br><span class="line">  	np.hstack() 水平方向，axis &#x3D; 1</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 级联</span><br><span class="line">  # np.concatenate()参数是列表:一定加中括号或者小括号</span><br><span class="line">  # 维度必须相同 形状相符</span><br><span class="line">  # 级联方向默认是这个shape这个tuple的第一个值所代表的维度方向</span><br><span class="line">  # 可通过axis参数改变级联方向</span><br><span class="line">  nd2 &#x3D; nd2.reshape(2,9)</span><br><span class="line">  nd2</span><br><span class="line">  # array([[ 1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">  #        [10, 11, 12,  7,  8,  9, 10, 11, 12]])</span><br><span class="line">  #%%</span><br><span class="line">  np.concatenate([nd2,nd2])</span><br><span class="line">  # array([[ 1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">  #        [10, 11, 12,  7,  8,  9, 10, 11, 12],</span><br><span class="line">  #        [ 1,  2,  3,  4,  5,  6,  7,  8,  9],</span><br><span class="line">  #        [10, 11, 12,  7,  8,  9, 10, 11, 12]])</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  image_data2 &#x3D; image_data[:,:310]</span><br><span class="line">  plt.imshow(image_data2)    # 截取图片</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  image_data3 &#x3D; image_data[:,310:,::-1]</span><br><span class="line">  plt.imshow(image_data3)</span><br><span class="line">  #%%</span><br><span class="line">  # 合拼俩张图片</span><br><span class="line">  # 高度0 宽度1 像素2</span><br><span class="line">  # axis决定在哪个方向上拼接</span><br><span class="line">  image_data4 &#x3D; np.concatenate([image_data2,image_data3],axis&#x3D;1)   # 在宽度上拼接</span><br><span class="line">  plt.imshow(image_data4)</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>切分</p>
+</li>
+<li><p>2、numpy切分操作</p>
+<pre><code>split() 参数二indices_or_sections:int 1-D array
+vsplit() 竖直方向，axis = 0
+hsplit() 水平方向，axis = 1
+</code></pre>
+</li>
+<li><pre><code class="python"># 切分(是级联的逆操作)
+# np.split()
+# np.vsplit()
+# np.hsplit()
+nd4.shape
+#%%
+np.split(nd4,indices_or_sections=2)     # 参数得被行数整除
+
+#%%
+np.split(nd4,indices_or_sections=[1,3])   # 表示在行的方向进行切分
+
+#%%
+np.vsplit(nd6,indices_or_sections=2)    # 在水平方向进行切分  axis=0
+
+
+#%%
+np.hsplit(nd6,indices_or_sections=4)    # 在垂直方向进行切分   axis=1
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 聚合操作</span><br><span class="line"></span><br><span class="line">- 3、numpy提供一些列函数</span><br><span class="line">  	聚合函数，合并到一块，根据某一个方向进行合并，axis</span><br><span class="line">  	percentile 求解ndarray百分比 中位数，百分之50%</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # 聚合操作</span><br><span class="line">  nd4</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4.sum()    # 计算和</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4.prod()    # 所有数的乘积</span><br><span class="line">  #%%</span><br><span class="line">  nd4.mean()   # 计算平均值</span><br><span class="line">  #%%</span><br><span class="line">  nd4.argmax(axis&#x3D;1)  # 找最大值的索引(按行寻找每行最大值)</span><br><span class="line">  nd4.argmin(axis&#x3D;-1)  # 找最小值的索引(按行寻找每行最小值)</span><br><span class="line">  #%%</span><br><span class="line">  np.argwhere((nd4&gt;79)&amp;(nd4&lt;100))    # 返回值大于79的索引</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4</span><br><span class="line">  #%%</span><br><span class="line">  nd7&#x3D;nd4.ravel()    # 将数据变为一维的</span><br><span class="line">  np.median(nd7)   # 计算中位数</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  np.percentile(nd4,q&#x3D;25)    # 相当于分位数</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4</span><br><span class="line">  #%%</span><br><span class="line">  nd4.any()    # 只要全部为0才是Flase</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  nd4[0,0]&#x3D;0</span><br><span class="line">  #%%</span><br><span class="line">  nd4.all()   # 判断是否全部非0</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li></li>
+</ul>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
