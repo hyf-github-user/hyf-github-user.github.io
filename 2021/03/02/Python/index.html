@@ -244,11 +244,43 @@ np.hsplit(nd6,indices_or_sections=4)    # 在垂直方向进行切分   axis=1
 <li><p>numpy的文件操作</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#%%</span></span><br><span class="line"><span class="comment"># 保存文件的操作</span></span><br><span class="line">np.save(<span class="string">&#x27;./data.npy&#x27;</span>,python)   <span class="comment"># ./表示在当前目录下,保存文件格式为二进制</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#%%</span></span><br><span class="line"><span class="comment"># 加载保存的二进制文件</span></span><br><span class="line">np.load(<span class="string">&#x27;./data.npy&#x27;</span>)</span><br><span class="line"><span class="comment"># 转换为txt文件</span></span><br><span class="line">np.savetxt(<span class="string">&#x27;./data.txt&#x27;</span>,python)   <span class="comment"># 会以科学计数法的方式记录</span></span><br><span class="line"><span class="comment"># 加载txt文件</span></span><br><span class="line">np.loadtxt(<span class="string">&#x27;./data.txt&#x27;</span>)</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>numpy的矩阵操作</p>
+<li><p>线性代数</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#%%</span></span><br><span class="line"><span class="comment"># ndarray的矩阵操作</span></span><br><span class="line"><span class="comment"># 矩阵的乘积</span></span><br><span class="line"><span class="comment"># x,y,z=2,1,5</span></span><br><span class="line"><span class="comment"># x+y+z=8</span></span><br><span class="line"><span class="comment"># 2x-y+z=8</span></span><br><span class="line"><span class="comment"># 3x+y-z=2</span></span><br><span class="line">X=np.array([[<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>],[<span class="number">2</span>,-<span class="number">1</span>,<span class="number">1</span>],[<span class="number">3</span>,<span class="number">1</span>,-<span class="number">1</span>]])</span><br><span class="line">X  <span class="comment"># 存储方程系数</span></span><br><span class="line"><span class="comment">#%%</span></span><br><span class="line">Y=np.array([<span class="number">8</span>,<span class="number">8</span>,<span class="number">2</span>])</span><br><span class="line">Y</span><br><span class="line"><span class="comment">#%%</span></span><br><span class="line"><span class="comment"># w是我们求解的未知数</span></span><br><span class="line">w=np.array([<span class="string">&#x27;x&#x27;</span>,<span class="string">&#x27;y&#x27;</span>,<span class="string">&#x27;z&#x27;</span>])</span><br><span class="line">w</span><br><span class="line"></span><br><span class="line"><span class="comment">#%%</span></span><br><span class="line"><span class="comment"># 先求解逆矩阵,才能求解方程的解</span></span><br><span class="line">X_inv=np.linalg.inv(X)   <span class="comment"># 计算逆矩阵</span></span><br><span class="line">X_inv</span><br><span class="line"><span class="comment">#%%</span></span><br><span class="line"><span class="comment"># 开始求解</span></span><br><span class="line">np.dot(X_inv,Y)   <span class="comment"># 得到方程结果</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>numpy的广播机制</p>
 </li>
+<li><pre><code class="python"># 广播机制
+nd10=nd.reshape(2000,5)
+nd10
+
+#%%
+
+nd11=np.arange(5)
+nd11
+
+#%%
+
+nd10+nd11   # 在nd10每列都相加nd11的数  列数一定要相等
+np.add(nd10,nd11)
+
+#%%
+
+nd10_mean=nd10.mean(axis=1)
+nd10_mean    # 每行的平均数
+
+
+#%%
+
+nd12=nd10_mean.reshape(2000,1)
+nd12
+
+#%%
+
+nd10-nd12   # 每行减去每行的平均数
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- numpy排序</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;python</span><br><span class="line">  # numpy的排序</span><br><span class="line">  np.sort(nd)    # 会生成排序对象,模块方法,自身不变</span><br><span class="line">  nd.sort()    # 对象方法,没有返回,自身会排序好</span><br><span class="line">  </span><br><span class="line">  #%%</span><br><span class="line">  </span><br><span class="line">  # 部分排序</span><br><span class="line">  np.partition(nd,kth&#x3D;5)   # 找到排好序的前五个数,但这五个数不会排序</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li></li>
 </ul>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
