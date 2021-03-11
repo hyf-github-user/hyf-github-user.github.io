@@ -248,4 +248,10 @@ nd10-nd12   # 每行减去每行的平均数
     <url>/2021/03/03/first/</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title>test</title>
+    <url>/2021/03/11/test/</url>
+    <content><![CDATA[<p><img src="/2021/03/11/test/blog\myblog\source_posts\test\hacker.jpg" alt="hacker"></p>
+]]></content>
+  </entry>
 </search>
